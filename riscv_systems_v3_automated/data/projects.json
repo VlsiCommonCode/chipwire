@@ -1,0 +1,226 @@
+[
+  {
+    "name": "CVA6",
+    "repo": "openhwgroup/cva6",
+    "type": "CPU Core",
+    "isa": "RV64GC",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "Linux",
+      "AXI",
+      "OpenHW"
+    ],
+    "desc": "Open-source application-class RISC-V processor for Linux-capable SoC designs.",
+    "github": "https://github.com/openhwgroup/cva6"
+  },
+  {
+    "name": "Chipyard",
+    "repo": "ucb-bar/chipyard",
+    "type": "SoC Framework",
+    "isa": "RV32/RV64",
+    "rtl": "Chisel",
+    "tags": [
+      "Rocket",
+      "BOOM",
+      "TileLink",
+      "Accelerators"
+    ],
+    "desc": "Configurable framework for composing RISC-V cores, memory systems, peripherals and accelerators.",
+    "github": "https://github.com/ucb-bar/chipyard"
+  },
+  {
+    "name": "Rocket Chip",
+    "repo": "chipsalliance/rocket-chip",
+    "type": "SoC Framework",
+    "isa": "RV32/RV64",
+    "rtl": "Chisel",
+    "tags": [
+      "Generator",
+      "TileLink",
+      "Caches"
+    ],
+    "desc": "Parameterizable RISC-V core and SoC generator used by many research platforms.",
+    "github": "https://github.com/chipsalliance/rocket-chip"
+  },
+  {
+    "name": "BOOM",
+    "repo": "riscv-boom/riscv-boom",
+    "type": "CPU Core",
+    "isa": "RV64",
+    "rtl": "Chisel",
+    "tags": [
+      "OoO",
+      "Superscalar",
+      "Research"
+    ],
+    "desc": "Open-source out-of-order RISC-V core for architecture research.",
+    "github": "https://github.com/riscv-boom/riscv-boom"
+  },
+  {
+    "name": "Ibex",
+    "repo": "lowRISC/ibex",
+    "type": "CPU Core",
+    "isa": "RV32",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "Embedded",
+      "Security",
+      "lowRISC"
+    ],
+    "desc": "Small configurable 32-bit RISC-V core for embedded and security-oriented designs.",
+    "github": "https://github.com/lowRISC/ibex"
+  },
+  {
+    "name": "CV32E40P",
+    "repo": "openhwgroup/cv32e40p",
+    "type": "CPU Core",
+    "isa": "RV32",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "Embedded",
+      "OpenHW"
+    ],
+    "desc": "4-stage 32-bit RISC-V core designed for embedded SoCs.",
+    "github": "https://github.com/openhwgroup/cv32e40p"
+  },
+  {
+    "name": "LiteX",
+    "repo": "enjoy-digital/litex",
+    "type": "SoC Framework",
+    "isa": "Mixed",
+    "rtl": "Python/HDL",
+    "tags": [
+      "FPGA",
+      "Wishbone",
+      "PCIe",
+      "Ethernet"
+    ],
+    "desc": "Python-based SoC builder with CPUs, buses, memory controllers and FPGA peripherals.",
+    "github": "https://github.com/enjoy-digital/litex"
+  },
+  {
+    "name": "VexRiscv",
+    "repo": "SpinalHDL/VexRiscv",
+    "type": "CPU Core",
+    "isa": "RV32",
+    "rtl": "SpinalHDL",
+    "tags": [
+      "FPGA",
+      "Configurable",
+      "Generator"
+    ],
+    "desc": "Highly configurable RISC-V CPU generator widely used in FPGA SoCs.",
+    "github": "https://github.com/SpinalHDL/VexRiscv"
+  },
+  {
+    "name": "PicoRV32",
+    "repo": "YosysHQ/picorv32",
+    "type": "CPU Core",
+    "isa": "RV32",
+    "rtl": "Verilog",
+    "tags": [
+      "Small",
+      "FPGA",
+      "Simple"
+    ],
+    "desc": "Compact practical RISC-V CPU core with a broad ecosystem of small SoCs.",
+    "github": "https://github.com/YosysHQ/picorv32"
+  },
+  {
+    "name": "NEORV32",
+    "repo": "stnolting/neorv32",
+    "type": "Complete SoC",
+    "isa": "RV32",
+    "rtl": "VHDL",
+    "tags": [
+      "MCU",
+      "Peripherals",
+      "FPGA"
+    ],
+    "desc": "Configurable RISC-V processor and SoC platform with an extensive peripheral ecosystem.",
+    "github": "https://github.com/stnolting/neorv32"
+  },
+  {
+    "name": "SweRVolf",
+    "repo": "chipsalliance/Cores-SweRVolf",
+    "type": "FPGA SoC",
+    "isa": "RV32",
+    "rtl": "Verilog",
+    "tags": [
+      "FPGA",
+      "Wishbone",
+      "SweRV"
+    ],
+    "desc": "Open FPGA SoC platform built around the SweRV RISC-V core.",
+    "github": "https://github.com/chipsalliance/Cores-SweRVolf"
+  },
+  {
+    "name": "Spike",
+    "repo": "riscv-software-src/riscv-isa-sim",
+    "type": "Simulation",
+    "isa": "RV32/RV64",
+    "rtl": "C++",
+    "tags": [
+      "ISA Simulator",
+      "Reference"
+    ],
+    "desc": "Reference RISC-V ISA simulator for architectural experiments and RTL comparison.",
+    "github": "https://github.com/riscv-software-src/riscv-isa-sim"
+  },
+  {
+    "name": "YiFive",
+    "repo": "dineshannayya/yifive_r0",
+    "type": "ASIC",
+    "isa": "RV32",
+    "rtl": "Verilog",
+    "tags": [
+      "OpenLane",
+      "SKY130",
+      "Caravel"
+    ],
+    "desc": "Open RISC-V SoC targeting open ASIC implementation flows.",
+    "github": "https://github.com/dineshannayya/yifive_r0"
+  },
+  {
+    "name": "retroSoC",
+    "repo": "retroSoC/retroSoC",
+    "type": "ASIC / Security",
+    "isa": "RV32",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "SKY130",
+      "GF180",
+      "JTAG"
+    ],
+    "desc": "Open SoC combining RTL, software, simulation and open-source ASIC targets.",
+    "github": "https://github.com/retroSoC/retroSoC"
+  },
+  {
+    "name": "RISCV-DV",
+    "repo": "chipsalliance/riscv-dv",
+    "type": "Verification",
+    "isa": "RV32/RV64",
+    "rtl": "SystemVerilog/Python",
+    "tags": [
+      "Random",
+      "UVM",
+      "Compliance"
+    ],
+    "desc": "Random instruction generator and verification infrastructure for RISC-V processor validation.",
+    "github": "https://github.com/chipsalliance/riscv-dv"
+  },
+  {
+    "name": "Cocotb",
+    "repo": "cocotb/cocotb",
+    "type": "Verification",
+    "isa": "Any",
+    "rtl": "Python",
+    "tags": [
+      "Simulation",
+      "Python",
+      "RTL"
+    ],
+    "desc": "Python-based verification framework useful for RISC-V cores and SoC blocks.",
+    "github": "https://github.com/cocotb/cocotb"
+  }
+]
