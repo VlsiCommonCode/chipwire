@@ -20,10 +20,34 @@ async function initProjects(){
  }
  [search,type,sort].forEach(x=>x&&x.addEventListener("input",render));render();
 }
+const STACK_MAP={cpu:["CPU Core"],soc:["SoC Framework","Complete SoC"],ip:["SoC Framework"],verification:["Verification","Simulation"],fpga:["FPGA SoC"],asic:["ASIC","ASIC / Security"],security:["ASIC / Security"],silicon:["ASIC","FPGA SoC","Complete SoC"]};
 async function initTrending(){
  const projects=await getJSON("data/projects.json")||[],live=await getJSON("data/github-data.json")||{},el=document.querySelector("#trending");
  if(!el)return;
- const items=projects.map(p=>({...p,...(live[p.repo]||{})})).filter(p=>p.stars!=null).sort((a,b)=>(b.stars||0)-(a.stars||0)).slice(0,5);
- el.innerHTML=items.map((p,i)=>`<div class="story"><div class="meta">0${i+1} · ${p.type}</div><h3>${p.name}</h3><p>★ ${p.stars.toLocaleString()} stars · ${p.language||p.rtl||"RTL/HDL"} · <a href="${p.github}" target="_blank">GitHub →</a></p></div>`).join("");
+ const items=projects.map(p=>({...p,...(live[p.repo]||{})})).filter(p=>p.stars!=null).sort((a,b)=>(b.stars||0)-(a.stars||0)).slice(0,3);
+ el.innerHTML=items.map(p=>`<a class="story" href="${p.github}" target="_blank" rel="noopener"><div class="meta">${p.type} · ${p.isa}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="story-foot">★ ${p.stars.toLocaleString()} · ${p.language||p.rtl||"RTL/HDL"} · GITHUB</div></a>`).join("");
 }
-if(document.querySelector("#projectGrid"))initProjects();initTrending();
+async function initStackCounts(){
+ const projects=await getJSON("data/projects.json")||[],el=document.querySelector("#stack");
+ if(!el)return;
+ el.querySelectorAll("[data-stack]").forEach(a=>{
+  const types=STACK_MAP[a.dataset.stack]||[];
+  const n=projects.filter(p=>types.includes(p.type)).length;
+  a.querySelector(".stack-count").textContent=n||"—";
+ });
+}
+function fmtNewsDate(iso){
+ if(!iso)return "";
+ const d=new Date(iso);
+ if(Number.isNaN(d.getTime()))return "";
+ return d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+}
+async function initIndustryNews(){
+ const data=await getJSON("data/industry-news.json"),el=document.querySelector("#industry-news"),stamp=document.querySelector("#news-updated");
+ if(!el)return;
+ const items=(data&&data.items)||[];
+ if(stamp&&data&&data.updated_at)stamp.textContent="Updated "+fmtNewsDate(data.updated_at);
+ if(!items.length){el.innerHTML=`<p class="news-empty">Industry headlines will appear after the next data refresh.</p>`;return;}
+ el.innerHTML=items.slice(0,9).map(n=>`<a class="news-card" href="${n.url}" target="_blank" rel="noopener"><div class="meta">${n.source}</div><h3>${n.title}</h3><p>${n.summary||""}</p><div class="story-foot">${fmtNewsDate(n.published)||"Recent"} · ${n.source.toUpperCase()}</div></a>`).join("");
+}
+if(document.querySelector("#projectGrid"))initProjects();initTrending();initStackCounts();initIndustryNews();
