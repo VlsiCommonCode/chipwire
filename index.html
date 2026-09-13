@@ -4,18 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>chipwire.ai — Open Silicon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:site_name" content="chipwire.ai">
   <meta property="og:title" content="chipwire.ai — Open Silicon">
   <meta name="description" content="chipwire.ai — open silicon, mapped. RISC-V, CPUs, SoCs, verification, FPGA and open ASIC.">
 </head>
-<body>
+<body class="page-home">
 
   <header>
     <div class="wrap nav">
       <a class="brand" href="index.html">chipwire.ai</a>
       <nav>
         <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
         <a href="topics.html">Topics</a>
         <a href="verification.html">Verification</a>
         <a href="learn.html">Learn</a>
@@ -25,76 +29,41 @@
 
   <main>
 
-    <section class="hero hero-featured">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <div class="meta">Editor's focus · engineering map</div>
-            <h1>How to navigate the open RISC-V SoC ecosystem</h1>
-            <p>
-              Start with a CPU core, understand its bus and memory system, add peripherals,
-              verify the design, then move toward FPGA and open ASIC implementation.
-            </p>
-            <div class="hero-links">
-              <a class="cta" href="learn.html">Read the guide →</a>
-              <a class="cta-secondary" href="projects.html">All projects →</a>
-            </div>
-          </div>
-          <aside class="hero-aside">
-            <div class="hero-art" aria-hidden="true">
-              <div class="stack-flow">
-                ISA → CPU → Cache → Interconnect → SoC → Verification → FPGA → ASIC → Silicon
-              </div>
-            </div>
-            <p class="hero-aside-caption">The system stack · original editorial map</p>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Industry</div>
-            <h2>Top news around the industry</h2>
-          </div>
-          <span id="news-updated" class="section-link"></span>
-        </div>
-        <div id="industry-news" class="news-grid"></div>
-        <p class="news-sources">
-          Headlines from
-          <a href="https://semiwiki.com/" target="_blank" rel="noopener">SemiWiki</a>,
-          <a href="https://www.eetimes.com/" target="_blank" rel="noopener">EE Times</a>, and
-          <a href="https://dvcon.org/media/news" target="_blank" rel="noopener">DVCon</a>.
-          Updated automatically via RSS and public feeds.
+    <section class="hero-stage">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="wrap hero-stage-inner">
+        <p class="hero-brand reveal">chipwire.ai</p>
+        <h1 class="reveal delay-1">The map from ISA to silicon.</h1>
+        <p class="hero-lead reveal delay-2">
+          A curated path through open RISC-V — cores, interconnect, verification, FPGA and open ASIC —
+          so engineers find the right project for the problem they are solving.
         </p>
+        <div class="hero-links reveal delay-3">
+          <a class="cta" href="projects.html">Explore the map</a>
+          <a class="cta-secondary" href="news.html">Industry news</a>
+        </div>
+        <div class="hero-path reveal delay-4" aria-hidden="true">
+          <span>ISA</span><i></i>
+          <span>CPU</span><i></i>
+          <span>SoC</span><i></i>
+          <span>Verify</span><i></i>
+          <span>FPGA</span><i></i>
+          <span>ASIC</span><i></i>
+          <span>Silicon</span>
+        </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-stack">
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="eyebrow">Trending</div>
-            <h2>Projects gaining attention</h2>
+            <div class="eyebrow">The product</div>
+            <h2>Navigate by the engineering layer.</h2>
           </div>
-          <a class="section-link" href="projects.html">Explore database →</a>
+          <a class="section-link" href="topics.html">Full topic index →</a>
         </div>
-        <div id="trending" class="stories"></div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="eyebrow">Explore</div>
-            <h2>The system stack</h2>
-          </div>
-          <a class="section-link" href="topics.html">Topic index →</a>
-        </div>
-        <div id="stack" class="stack">
+        <div id="stack" class="stack stack-modern">
           <a href="topics.html#cpu" data-stack="cpu">
             <span class="stack-count"></span>
             <strong>CPU</strong>
@@ -139,43 +108,43 @@
       </div>
     </section>
 
-    <section class="section section-soft">
+    <section class="section">
       <div class="wrap">
-        <h2 class="pillars-title">From instruction set to silicon.</h2>
-        <div class="pillars">
-          <div class="pillar">
-            <strong>CPUs &amp; architecture</strong>
-            <p>
-              RISC-V cores, extensions, pipelines, and the design choices behind
-              performance and power in open processor implementations.
-            </p>
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Industry signal</div>
+            <h2>What the ecosystem is talking about.</h2>
           </div>
-          <div class="pillar">
-            <strong>SoCs &amp; system IP</strong>
-            <p>
-              Generators, buses, memory hierarchies, and the interconnect fabric
-              that turns a CPU into a complete system-on-chip.
-            </p>
-          </div>
-          <div class="pillar">
-            <strong>Verification &amp; silicon</strong>
-            <p>
-              Simulation, formal methods, FPGA prototypes, and open ASIC flows —
-              the path from RTL to tapeout and bring-up.
-            </p>
+          <div class="news-meta-row">
+            <span id="news-updated" class="section-link"></span>
+            <a class="section-link" href="news.html">All categories →</a>
           </div>
         </div>
+        <div id="industry-news" class="news-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Open projects</div>
+            <h2>Repos gaining attention.</h2>
+          </div>
+          <a class="section-link" href="projects.html">Browse database →</a>
+        </div>
+        <div id="trending" class="stories"></div>
       </div>
     </section>
 
     <section class="section section-flush">
       <div class="wrap">
-        <div class="newsletter">
-          <div class="eyebrow">The weekly digest</div>
+        <div class="newsletter newsletter-stage">
+          <div class="eyebrow">Weekly digest</div>
           <h2>One systems perspective.</h2>
           <p>
-            New RISC-V projects, interesting commits, open ASIC tapeouts, verification
-            tools and technical reading — curated for engineers.
+            New RISC-V projects, open ASIC tapeouts, verification tools and industry reading —
+            curated for engineers building real silicon.
           </p>
           <button type="button">Digest coming soon</button>
         </div>

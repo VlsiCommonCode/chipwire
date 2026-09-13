@@ -43,20 +43,74 @@ function fmtNewsDate(iso){
  return d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
 }
 function escapeHtml(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
-async function initIndustryNews(){
- const el=document.querySelector("#industry-news"),stamp=document.querySelector("#news-updated");
- if(!el)return;
- // Prefer bundled JS (works with file://); fall back to JSON fetch on a real server.
+function categoryLabel(id, cats){
+ const hit=(cats||[]).find(c=>c.id===id);
+ return hit?hit.label:id;
+}
+async function loadNewsData(){
  let data=(typeof window!=="undefined"&&window.CHIPWIRE_NEWS)||null;
  if(!data||!Array.isArray(data.items)||!data.items.length){
   data=await getJSON("data/industry-news.json");
  }
- const items=(data&&Array.isArray(data.items))?data.items:[];
- if(stamp&&data&&data.updated_at)stamp.textContent="Updated "+fmtNewsDate(data.updated_at);
+ return data||{items:[],categories:[],home_limit:12};
+}
+function renderNewsCard(n, cats){
+ const cat=categoryLabel(n.category, cats);
+ return `<a class="news-card" href="${escapeHtml(n.url)}" target="_blank" rel="noopener"><div class="meta">${escapeHtml(n.source)} · ${escapeHtml(cat)}</div><h3>${escapeHtml(n.title)}</h3><p>${escapeHtml(n.summary||"")}</p><div class="story-foot">${fmtNewsDate(n.published)||"Recent"} · ${escapeHtml((n.source||"").toUpperCase())}</div></a>`;
+}
+async function initIndustryNews(){
+ const el=document.querySelector("#industry-news"),stamp=document.querySelector("#news-updated");
+ if(!el)return;
+ const data=await loadNewsData();
+ const items=data.items||[];
+ const limit=data.home_limit||12;
+ if(stamp&&data.updated_at)stamp.textContent="Updated "+fmtNewsDate(data.updated_at);
  if(!items.length){
-  el.innerHTML=`<p class="news-empty">No headlines loaded yet. Run <code>python3 scripts/update_news.py</code>, then hard-refresh. On the live site, push <code>data/industry-news.js</code> (or wait for Actions).</p>`;
+  el.innerHTML=`<p class="news-empty">No headlines loaded yet. Run <code>python3 scripts/update_news.py</code>, then hard-refresh.</p>`;
   return;
  }
- el.innerHTML=items.slice(0,9).map(n=>`<a class="news-card" href="${escapeHtml(n.url)}" target="_blank" rel="noopener"><div class="meta">${escapeHtml(n.source)}</div><h3>${escapeHtml(n.title)}</h3><p>${escapeHtml(n.summary||"")}</p><div class="story-foot">${fmtNewsDate(n.published)||"Recent"} · ${escapeHtml((n.source||"").toUpperCase())}</div></a>`).join("");
+ el.innerHTML=items.slice(0,limit).map(n=>renderNewsCard(n,data.categories)).join("");
 }
-if(document.querySelector("#projectGrid"))initProjects();initTrending();initStackCounts();initIndustryNews();
+async function initNewsPage(){
+ const grid=document.querySelector("#news-all");
+ const filters=document.querySelector("#news-filters");
+ const stamp=document.querySelector("#news-updated");
+ const countEl=document.querySelector("#news-count");
+ if(!grid||!filters)return;
+ const data=await loadNewsData();
+ const items=data.items||[];
+ const cats=data.categories||[];
+ if(stamp&&data.updated_at)stamp.textContent="Updated "+fmtNewsDate(data.updated_at);
+ if(!items.length){
+  filters.innerHTML="";
+  grid.innerHTML=`<p class="news-empty">No headlines loaded yet. Run <code>python3 scripts/update_news.py</code>.</p>`;
+  return;
+ }
+ const present=new Set(items.map(i=>i.category).filter(Boolean));
+ const tabs=[{id:"all",label:"All"},...cats.filter(c=>present.has(c.id))];
+ let active="all";
+ const hash=location.hash.replace("#","");
+ if(hash&&(hash==="all"||present.has(hash)))active=hash;
+ function render(){
+  filters.querySelectorAll("[data-cat]").forEach(btn=>{
+   btn.classList.toggle("is-active",btn.dataset.cat===active);
+  });
+  const shown=active==="all"?items:items.filter(i=>i.category===active);
+  if(countEl)countEl.textContent=shown.length+" articles";
+  grid.innerHTML=shown.map(n=>renderNewsCard(n,cats)).join("");
+ }
+ filters.innerHTML=tabs.map(t=>`<button type="button" class="news-filter" data-cat="${escapeHtml(t.id)}">${escapeHtml(t.label)}</button>`).join("");
+ filters.addEventListener("click",e=>{
+  const btn=e.target.closest("[data-cat]");
+  if(!btn)return;
+  active=btn.dataset.cat;
+  history.replaceState(null,"","#"+active);
+  render();
+ });
+ render();
+}
+if(document.querySelector("#projectGrid"))initProjects();
+initTrending();
+initStackCounts();
+initIndustryNews();
+initNewsPage();

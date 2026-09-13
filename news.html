@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>News — chipwire.ai</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:site_name" content="chipwire.ai">
+  <meta property="og:title" content="chipwire.ai — Industry News">
+  <meta name="description" content="Curated semiconductor headlines across industry, architecture, RISC-V, AI silicon, manufacturing, conferences, and India.">
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="index.html">chipwire.ai</a>
+      <nav>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="topics.html">Topics</a>
+        <a href="verification.html">Verification</a>
+        <a href="learn.html">Learn</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">Industry digest</div>
+        <h1>Semiconductor news, curated.</h1>
+        <p>
+          Tiered coverage across industry, architecture, RISC-V / open hardware, AI silicon,
+          manufacturing, conferences, and the India semiconductor ecosystem.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Browse</div>
+            <h2>Latest across the stack</h2>
+          </div>
+          <div class="news-meta-row">
+            <span id="news-count" class="section-link"></span>
+            <span id="news-updated" class="section-link"></span>
+          </div>
+        </div>
+        <div id="news-filters" class="news-filters" aria-label="Filter by category"></div>
+        <div id="news-all" class="news-grid"></div>
+        <p class="news-sources">
+          Sources include EE Times, Semiconductor Engineering, SemiWiki, DigiTimes, SemiAnalysis,
+          Chips and Cheese, RISC-V International, lowRISC, SEMI, Electronics For You, DVCon, and more.
+          Feeds refresh via <code>scripts/update_news.py</code>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 chipwire.ai</span>
+      <span>Editorial aggregation · originals remain with publishers.</span>
+    </div>
+  </footer>
+
+  <script src="data/industry-news.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
