@@ -42,12 +42,21 @@ function fmtNewsDate(iso){
  if(Number.isNaN(d.getTime()))return "";
  return d.toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
 }
+function escapeHtml(s){return String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]))}
 async function initIndustryNews(){
- const data=await getJSON("data/industry-news.json"),el=document.querySelector("#industry-news"),stamp=document.querySelector("#news-updated");
+ const el=document.querySelector("#industry-news"),stamp=document.querySelector("#news-updated");
  if(!el)return;
- const items=(data&&data.items)||[];
+ // Prefer bundled JS (works with file://); fall back to JSON fetch on a real server.
+ let data=(typeof window!=="undefined"&&window.CHIPWIRE_NEWS)||null;
+ if(!data||!Array.isArray(data.items)||!data.items.length){
+  data=await getJSON("data/industry-news.json");
+ }
+ const items=(data&&Array.isArray(data.items))?data.items:[];
  if(stamp&&data&&data.updated_at)stamp.textContent="Updated "+fmtNewsDate(data.updated_at);
- if(!items.length){el.innerHTML=`<p class="news-empty">Industry headlines will appear after the next data refresh.</p>`;return;}
- el.innerHTML=items.slice(0,9).map(n=>`<a class="news-card" href="${n.url}" target="_blank" rel="noopener"><div class="meta">${n.source}</div><h3>${n.title}</h3><p>${n.summary||""}</p><div class="story-foot">${fmtNewsDate(n.published)||"Recent"} · ${n.source.toUpperCase()}</div></a>`).join("");
+ if(!items.length){
+  el.innerHTML=`<p class="news-empty">No headlines loaded yet. Run <code>python3 scripts/update_news.py</code>, then hard-refresh. On the live site, push <code>data/industry-news.js</code> (or wait for Actions).</p>`;
+  return;
+ }
+ el.innerHTML=items.slice(0,9).map(n=>`<a class="news-card" href="${escapeHtml(n.url)}" target="_blank" rel="noopener"><div class="meta">${escapeHtml(n.source)}</div><h3>${escapeHtml(n.title)}</h3><p>${escapeHtml(n.summary||"")}</p><div class="story-foot">${fmtNewsDate(n.published)||"Recent"} · ${escapeHtml((n.source||"").toUpperCase())}</div></a>`).join("");
 }
 if(document.querySelector("#projectGrid"))initProjects();initTrending();initStackCounts();initIndustryNews();

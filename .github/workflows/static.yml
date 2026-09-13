@@ -9,6 +9,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Refresh GitHub metadata and industry news daily
+  schedule:
+    - cron: "0 8 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -31,6 +35,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Update site data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 -m pip install --quiet certifi
+          python3 scripts/update_github.py
+          python3 scripts/update_news.py
+          test -s data/industry-news.json
+          test -s data/industry-news.js
+          python3 -c "import json; d=json.load(open('data/industry-news.json')); assert d.get('items'), 'industry-news.json has no items'"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

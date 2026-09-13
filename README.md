@@ -18,9 +18,11 @@ chipwire/
 ├── CNAME
 ├── data/
 │   ├── projects.json
-│   └── github-data.json
+│   ├── github-data.json
+│   └── industry-news.json
 ├── scripts/
-│   └── update_github.py
+│   ├── update_github.py
+│   └── update_news.py
 └── .github/workflows/
     └── deploy.yml
 ```
@@ -35,7 +37,7 @@ In GitHub:
 2. Set **Source** to **GitHub Actions**.
 3. Push to `main` or manually run **Actions → Update data and deploy chipwire.ai**.
 
-The workflow updates public GitHub metadata, then deploys the repository as a static GitHub Pages site.
+The workflow updates public GitHub metadata, fetches industry headlines (SemiWiki, EE Times, DVCon), then deploys the repository as a static GitHub Pages site.
 
 ## Custom domain
 
