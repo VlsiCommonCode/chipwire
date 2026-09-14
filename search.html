@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search — chipwire.ai</title>
+  <meta name="description" content="Search Chipwire projects, industry news, and open-silicon concept pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">chipwire.ai</a>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="news.html">News</a>
+      <a href="events.html">Events</a>
+      <a href="topics.html">Topics</a>
+      <a href="verification.html">Verification</a>
+      <a href="learn.html">Learn</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="kicker">Index</div>
+      <h1>Search the map.</h1>
+      <p>Projects, news, and concept pages in one query — no membership wall.</p>
+      <form class="toolbar" id="site-search-form">
+        <input id="site-search" type="search" placeholder="CPU, TileLink, OpenTitan, India…">
+        <button class="cta" type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <p id="search-count" class="smallnote"></p>
+      <div id="search-results" class="stories"></div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-inner">
+    <span>chipwire.ai</span>
+    <a class="section-link" href="ask.html">Ask an engineer →</a>
+  </div>
+</footer>
+<script src="data/industry-news.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
