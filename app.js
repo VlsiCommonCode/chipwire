@@ -11,12 +11,23 @@ async function initProjects(){
   let items=merged.filter(p=>(!q||JSON.stringify(p).toLowerCase().includes(q))&&(!t||p.type===t));
   if(s==="stars")items.sort((a,b)=>(b.stars||0)-(a.stars||0));
   if(s==="recent")items.sort((a,b)=>new Date(b.updated_at||0)-new Date(a.updated_at||0));
-  grid.innerHTML=items.map(p=>`<article class="card">
-   <div class="eyebrow">${p.type} · ${p.isa}</div><h3>${p.name}</h3>
-   <div class="metrics"><span class="metric">★ <b>${fmt(p.stars)}</b></span><span class="metric">⑂ <b>${fmt(p.forks)}</b></span><span class="metric">${p.language||p.rtl||"—"}</span></div>
-   <p>${p.desc}</p><div class="tags">${(p.tags||[]).map(x=>`<span class="tag">${x}</span>`).join("")}</div>
-   ${p.updated_at?`<span class="status">ACTIVE DATA · ${new Date(p.updated_at).toLocaleDateString()}</span>`:`<span class="status dim">CURATED</span>`}
-   <a href="${p.github}" target="_blank" rel="noopener">VIEW ON GITHUB →</a></article>`).join("");
+  grid.innerHTML=items.map(p=>{
+   const url=p.github||(p.repo?`https://github.com/${p.repo}`:"");
+   const repo=p.repo||(url?url.replace(/^https?:\/\/github\.com\//,""):"");
+   if(!url){
+    return `<article class="card card-static">
+   <div class="eyebrow">${escapeHtml(p.type)} · ${escapeHtml(p.isa)}</div><h3>${escapeHtml(p.name)}</h3>
+   <div class="metrics"><span class="metric">★ <b>${fmt(p.stars)}</b></span><span class="metric">⑂ <b>${fmt(p.forks)}</b></span><span class="metric">${escapeHtml(p.language||p.rtl||"—")}</span></div>
+   <p>${escapeHtml(p.desc)}</p><div class="tags">${(p.tags||[]).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join("")}</div>
+   <span class="status dim">NO GITHUB LINK</span></article>`;
+   }
+   return `<a class="card card-link" href="${escapeHtml(url)}" target="_blank" rel="noopener" aria-label="Open ${escapeHtml(p.name)} on GitHub">
+   <div class="eyebrow">${escapeHtml(p.type)} · ${escapeHtml(p.isa)}</div><h3>${escapeHtml(p.name)}</h3>
+   <div class="metrics"><span class="metric">★ <b>${fmt(p.stars)}</b></span><span class="metric">⑂ <b>${fmt(p.forks)}</b></span><span class="metric">${escapeHtml(p.language||p.rtl||"—")}</span></div>
+   <p>${escapeHtml(p.desc)}</p><div class="tags">${(p.tags||[]).map(x=>`<span class="tag">${escapeHtml(x)}</span>`).join("")}</div>
+   ${p.updated_at?`<span class="status">ACTIVE · ${new Date(p.updated_at).toLocaleDateString()}</span>`:`<span class="status dim">CURATED</span>`}
+   <span class="card-cta"><span class="card-repo">${escapeHtml(repo)}</span><span class="card-action">Open on GitHub →</span></span></a>`;
+  }).join("");
  }
  [search,type,sort].forEach(x=>x&&x.addEventListener("input",render));render();
 }
