@@ -1,2 +1,76 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Verification — chipwire.ai</title><link rel="stylesheet" href="styles.css"><meta property="og:site_name" content="chipwire.ai" /><meta property="og:title" content="chipwire.ai — Open Silicon" /><meta name="description" content="chipwire.ai — open silicon, mapped. RISC-V, CPUs, SoCs, verification, FPGA and open ASIC." />
-</head><body><header><div class="wrap nav"><a class="brand" href="index.html">chipwire.ai</a><nav><a href="projects.html">Projects</a><a href="news.html">News</a><a href="topics.html">Topics</a><a href="verification.html">Verification</a><a href="learn.html">Learn</a></nav></div></header><main><section class="hero"><div class="wrap"><div class="kicker">Verification</div><h1>Verify the machine.</h1><p>From ISA compliance and random instruction streams to block-level simulation, formal properties and full-SoC validation.</p></div></section><section class="section"><div class="wrap"><div class="learn"><div class="path"><div class="eyebrow">01 · ISA</div><h3>Instruction correctness</h3><ol><li>ISA tests</li><li>RISCV-DV</li><li>Reference models</li><li>Spike co-simulation</li></ol></div><div class="path"><div class="eyebrow">02 · RTL</div><h3>Microarchitecture</h3><ol><li>Directed tests</li><li>Constrained random</li><li>Assertions</li><li>Functional coverage</li></ol></div><div class="path"><div class="eyebrow">03 · SoC</div><h3>System validation</h3><ol><li>Boot flows</li><li>Drivers</li><li>DMA / interrupts</li><li>Linux workloads</li></ol></div></div></div></section><section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Tools</div><h2>Open verification stack</h2></div></div><div class="stack"><a href="https://github.com/chipsalliance/riscv-dv"><strong>RISCV-DV</strong><small>Random instruction generation</small></a><a href="https://github.com/cocotb/cocotb"><strong>Cocotb</strong><small>Python RTL verification</small></a><a href="https://github.com/riscv-software-src/riscv-isa-sim"><strong>Spike</strong><small>ISA reference simulator</small></a><a href="projects.html"><strong>Explore more</strong><small>Find verification-oriented projects</small></a></div></div></section></main><footer><div class="wrap">Verification content is an engineering map, not a certification claim.</div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verification — chipwire.ai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:site_name" content="chipwire.ai">
+  <meta property="og:title" content="chipwire.ai — Verification">
+  <meta name="description" content="Verification methods for open silicon: UVM, cocotb, formal, ISA compliance, and silicon bring-up.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="21" height="21" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 3.5v21M18 3.5v21M3.5 10h21M3.5 18h21" stroke="currentColor" stroke-width="1" opacity=".65"/></svg>
+        <span class="brand-word">chipwire<span>.ai</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav>
+        <a href="projects.html">Projects</a>
+        <a href="news.html">News</a>
+        <a href="topics.html">Topics</a>
+        <a href="verification.html">Verification</a>
+        <a href="learn.html">Learn</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="kicker">Sign-off stack</div>
+        <h1>Prove the silicon before it ships.</h1>
+        <p>A map of open verification methods used on RISC-V cores, SoCs and tapeouts — simulation, formal, ISA compliance and bring-up.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="verify-grid">
+          <article class="verify-card">
+            <div class="eyebrow">Simulation</div>
+            <h3>UVM &amp; cocotb</h3>
+            <p>Constrained-random testbenches, Python-driven stimulus, and coverage closure on RTL before synthesis.</p>
+          </article>
+          <article class="verify-card">
+            <div class="eyebrow">Formal</div>
+            <h3>Properties &amp; equivalence</h3>
+            <p>Assertions on pipelines, bus protocols and reset domains; equivalence between RTL and netlist.</p>
+          </article>
+          <article class="verify-card">
+            <div class="eyebrow">ISA</div>
+            <h3>Compliance &amp; architectural tests</h3>
+            <p>RISC-V architectural test suites, Spike / Sail comparison, and privilege-mode edge cases.</p>
+          </article>
+          <article class="verify-card">
+            <div class="eyebrow">Silicon</div>
+            <h3>FPGA &amp; bring-up</h3>
+            <p>Emulation on FPGA, scan and JTAG, then first-silicon bring-up against the same golden models.</p>
+          </article>
+        </div>
+        <p class="smallnote" style="margin-top:28px"><a class="section-link" href="projects.html">Browse verification projects →</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 chipwire.ai</span>
+      <span>Verification is the product, not a late-stage checklist.</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -4,15 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News — chipwire.ai</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:site_name" content="chipwire.ai">
   <meta property="og:title" content="chipwire.ai — Industry News">
   <meta name="description" content="Curated semiconductor headlines across industry, architecture, RISC-V, AI silicon, manufacturing, conferences, and India.">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="index.html">chipwire.ai</a>
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="21" height="21" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 3.5v21M18 3.5v21M3.5 10h21M3.5 18h21" stroke="currentColor" stroke-width="1" opacity=".65"/></svg>
+        <span class="brand-word">chipwire<span>.ai</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav>
         <a href="projects.html">Projects</a>
         <a href="news.html">News</a>
