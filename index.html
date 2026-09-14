@@ -20,6 +20,7 @@
       <nav>
         <a href="projects.html">Projects</a>
         <a href="news.html">News</a>
+        <a href="events.html">Events</a>
         <a href="topics.html">Topics</a>
         <a href="verification.html">Verification</a>
         <a href="learn.html">Learn</a>
@@ -40,7 +41,7 @@
         </p>
         <div class="hero-links reveal delay-3">
           <a class="cta" href="projects.html">Explore the map</a>
-          <a class="cta-secondary" href="news.html">Industry news</a>
+          <a class="cta-secondary" href="search.html">Search</a>
         </div>
         <div class="hero-path reveal delay-4" aria-hidden="true">
           <span>ISA</span><i></i>
@@ -94,12 +95,17 @@
             <strong>ASIC</strong>
             <small>OpenLane · SKY130 · GF180</small>
           </a>
+          <a href="topics.html#chiplet" data-stack="chiplet">
+            <span class="stack-count"></span>
+            <strong>Chiplets</strong>
+            <small>UCIe · 2.5D · D2D · HBM</small>
+          </a>
           <a href="topics.html#security" data-stack="security">
             <span class="stack-count"></span>
             <strong>Security</strong>
             <small>Root of trust · secure SoCs</small>
           </a>
-          <a href="learn.html" data-stack="silicon">
+          <a href="silicon.html" data-stack="silicon">
             <span class="stack-count"></span>
             <strong>Silicon</strong>
             <small>Tapeout · bring-up · lessons</small>
@@ -128,6 +134,19 @@
       <div class="wrap">
         <div class="section-head">
           <div>
+            <div class="eyebrow">Calendar</div>
+            <h2>What is coming up.</h2>
+          </div>
+          <a class="section-link" href="events.html">All events →</a>
+        </div>
+        <div id="home-events" class="stories"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
             <div class="eyebrow">Open projects</div>
             <h2>Repos gaining attention.</h2>
           </div>
@@ -146,7 +165,11 @@
             New RISC-V projects, open ASIC tapeouts, verification tools and industry reading —
             curated for engineers building real silicon.
           </p>
-          <button type="button">Digest coming soon</button>
+          <form class="digest-form" id="digest-form">
+            <input type="email" name="email" required placeholder="you@lab.org" autocomplete="email">
+            <button type="submit">Request the digest</button>
+          </form>
+          <p id="digest-status" class="smallnote" hidden></p>
         </div>
       </div>
     </section>
@@ -156,7 +179,14 @@
   <footer>
     <div class="wrap footer-inner">
       <span>© 2026 chipwire.ai</span>
-      <span>Open-source engineering map.</span>
+      <span>
+        <a class="section-link" href="orgs.html">Ecosystem</a>
+        · <a class="section-link" href="india.html">India</a>
+        · <a class="section-link" href="compare.html">Compare</a>
+        · <a class="section-link" href="silicon.html">Tapeouts</a>
+        · <a class="section-link" href="search.html">Search</a>
+        · <a class="section-link" href="ask.html">Ask</a>
+      </span>
     </div>
   </footer>
 

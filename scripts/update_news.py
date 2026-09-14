@@ -20,6 +20,15 @@ USER_AGENT = (
     "Mozilla/5.0 (compatible; chipwire.ai-news-bot/1.3; +https://chipwire.ai)"
 )
 
+CHANNELS = [
+    {"id": "riscv", "label": "RISC-V", "keywords": ["risc-v", "riscv", "openhw", "lowrisc", "sifive", "andes"]},
+    {"id": "chiplet", "label": "Chiplet", "keywords": ["chiplet", "3d ic", "2.5d", "ucie", "packaging", "hbm", "die-to-die", "d2d"]},
+    {"id": "eda", "label": "EDA", "keywords": ["eda", "verification", "uvm", "formal", "synthesis", "place and route", "openlane", "openroad"]},
+    {"id": "foundry", "label": "Foundry", "keywords": ["tsmc", "intel foundry", "samsung foundry", "foundry", "wafer", "sky130", "gf180", "asml"]},
+    {"id": "security", "label": "Security", "keywords": ["security", "opentitan", "cheri", "root of trust", "crypto", "secure boot", "tee"]},
+    {"id": "automotive", "label": "Automotive", "keywords": ["automotive", "iso 26262", "adas", "vehicle", "auto "]},
+]
+
 CATEGORIES = [
     {
         "id": "industry",
@@ -182,6 +191,26 @@ def atom_link(node: ET.Element) -> str:
         if href:
             return href
     return ""
+
+
+def assign_channels(item: Dict) -> List[str]:
+    blob = " ".join(
+        [
+            item.get("title") or "",
+            item.get("summary") or "",
+            item.get("source") or "",
+            item.get("category") or "",
+        ]
+    ).lower()
+    hits: List[str] = []
+    for channel in CHANNELS:
+        if any(k in blob for k in channel["keywords"]):
+            hits.append(channel["id"])
+    if item.get("category") == "riscv" and "riscv" not in hits:
+        hits.append("riscv")
+    if item.get("category") == "conferences" and "eda" not in hits:
+        hits.append("eda")
+    return hits
 
 
 def matches_keywords(title: str, summary: str, keywords: Optional[List[str]]) -> bool:
@@ -369,10 +398,13 @@ def main() -> None:
 
     unique.sort(key=sort_key, reverse=True)
     selected = diversify(unique, TOTAL_LIMIT)
+    for item in selected:
+        item["channels"] = assign_channels(item)
     payload = {
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "home_limit": HOME_LIMIT,
         "categories": CATEGORIES,
+        "channels": [{"id": c["id"], "label": c["label"]} for c in CHANNELS],
         "items": selected,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
