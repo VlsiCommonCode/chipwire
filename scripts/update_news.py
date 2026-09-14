@@ -17,7 +17,7 @@ BASE = Path(__file__).resolve().parents[1]
 OUT = BASE / "data" / "industry-news.json"
 OUT_JS = BASE / "data" / "industry-news.js"
 USER_AGENT = (
-    "Mozilla/5.0 (compatible; chipwire.ai-news-bot/1.3; +https://chipwire.ai)"
+    "Mozilla/5.0 (compatible; impedra.ai-news-bot/1.0; +https://impedra.ai)"
 )
 
 CHANNELS = [
@@ -410,7 +410,7 @@ def main() -> None:
     OUT.parent.mkdir(parents=True, exist_ok=True)
     body = json.dumps(payload, indent=2)
     OUT.write_text(body + "\n", encoding="utf-8")
-    OUT_JS.write_text(f"window.CHIPWIRE_NEWS = {body};\n", encoding="utf-8")
+    OUT_JS.write_text(f"window.IMPEDRA_NEWS = {body};\n", encoding="utf-8")
 
     counts: Dict[str, int] = {}
     for item in selected:

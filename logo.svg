@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none" role="img" aria-label="impedra.ai">
+  <title>impedra.ai</title>
+  <g stroke="#7cff6b" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M6 20h24l6.5-11 6.5 22 6.5-22 6.5 22 6.5-22 6.5 11h28"/>
+    <ellipse cx="101" cy="22" rx="9.5" ry="12.5"/>
+    <ellipse cx="118" cy="22" rx="9.5" ry="12.5"/>
+    <ellipse cx="135" cy="22" rx="9.5" ry="12.5"/>
+    <path d="M144 20h50"/>
+  </g>
+</svg>

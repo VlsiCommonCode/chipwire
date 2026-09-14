@@ -1,0 +1,155 @@
+{
+  "updated_at": "2026-09-14",
+  "events": [
+    {
+      "name": "AI Infra Summit 2026",
+      "start": "2026-09-15",
+      "end": "2026-09-17",
+      "place": "Santa Clara, CA",
+      "kind": "conference",
+      "topics": ["AI Silicon", "Datacenter"],
+      "url": "https://ai-infra-summit.com/",
+      "blurb": "Accelerators, fabrics, and the power envelope around large-scale AI systems."
+    },
+    {
+      "name": "IEDM 2026",
+      "start": "2026-12-12",
+      "end": "2026-12-16",
+      "place": "San Francisco, CA",
+      "kind": "conference",
+      "topics": ["Process", "Devices"],
+      "url": "https://www.ieee-iedm.org/",
+      "blurb": "Device and process papers that usually land in production silicon two to five years later."
+    },
+    {
+      "name": "ISSCC 2027",
+      "start": "2027-02-14",
+      "end": "2027-02-18",
+      "place": "San Francisco, CA",
+      "kind": "conference",
+      "topics": ["Circuits", "Architecture"],
+      "url": "https://www.isscc.org/",
+      "blurb": "New silicon and circuit research — CPUs, accelerators, memory interfaces, and analog."
+    },
+    {
+      "name": "FOSDEM 2027",
+      "start": "2027-02-06",
+      "end": "2027-02-07",
+      "place": "Brussels",
+      "kind": "conference",
+      "topics": ["Open Hardware", "RISC-V"],
+      "url": "https://fosdem.org/",
+      "blurb": "Open-source hardware and RISC-V developer rooms, talks, and hallway track."
+    },
+    {
+      "name": "DVCon U.S. 2027",
+      "start": "2027-02-23",
+      "end": "2027-02-26",
+      "place": "San Jose, CA",
+      "kind": "conference",
+      "topics": ["Verification", "EDA"],
+      "url": "https://dvcon.org/",
+      "blurb": "UVM, formal, SystemVerilog, and the verification stack behind production SoCs."
+    },
+    {
+      "name": "RISC-V Summit North America",
+      "start": "2026-10-20",
+      "end": "2026-10-23",
+      "place": "Santa Clara, CA",
+      "kind": "conference",
+      "topics": ["RISC-V", "Open Hardware"],
+      "url": "https://riscv.org/riscv-events/",
+      "blurb": "ISA extensions, software ecosystem, cores, and the companies shipping RISC-V silicon."
+    },
+    {
+      "name": "DATE 2027",
+      "start": "2027-03-30",
+      "end": "2027-04-01",
+      "place": "Europe",
+      "kind": "conference",
+      "topics": ["EDA", "Design"],
+      "url": "https://www.date-conference.com/",
+      "blurb": "Design, automation, and test — from RTL methodology to system-level exploration."
+    },
+    {
+      "name": "DAC 2027",
+      "start": "2027-06-21",
+      "end": "2027-06-24",
+      "place": "San Francisco, CA",
+      "kind": "conference",
+      "topics": ["EDA", "Chip design"],
+      "url": "https://www.dac.com/",
+      "blurb": "The EDA and chip-design marketplace: tools, flows, chiplets, and AI-assisted design."
+    },
+    {
+      "name": "VLSI Symposium 2027",
+      "start": "2027-06-14",
+      "end": "2027-06-18",
+      "place": "Kyoto / Honolulu (rotates)",
+      "kind": "conference",
+      "topics": ["Process", "Circuits"],
+      "url": "https://www.vlsisymposium.org/",
+      "blurb": "Process and circuit papers that sit between IEDM devices and ISSCC systems."
+    },
+    {
+      "name": "SEMICON India",
+      "start": "2027-09-07",
+      "end": "2027-09-09",
+      "place": "New Delhi",
+      "kind": "conference",
+      "topics": ["Manufacturing", "India"],
+      "url": "https://www.semiconindia.org/",
+      "blurb": "India’s manufacturing, ATMP, and design-ecosystem gathering — pair with the India hub."
+    },
+    {
+      "name": "SEMICON West 2027",
+      "start": "2027-07-13",
+      "end": "2027-07-15",
+      "place": "San Francisco, CA",
+      "kind": "conference",
+      "topics": ["Manufacturing", "Equipment"],
+      "url": "https://www.semiconwest.org/",
+      "blurb": "Fab equipment, materials, packaging, and the manufacturing ecosystem behind volume silicon."
+    },
+    {
+      "name": "Hot Chips 2027",
+      "start": "2027-08-22",
+      "end": "2027-08-24",
+      "place": "Stanford, CA",
+      "kind": "conference",
+      "topics": ["Architecture", "AI Silicon"],
+      "url": "https://hotchips.org/",
+      "blurb": "CPU, GPU, and accelerator architecture talks — usually ahead of mainstream coverage."
+    }
+  ],
+  "webinars": [
+    {
+      "name": "Shift Left to Ship Faster: Verifying IP and SoCs at Real Workload Speeds",
+      "date": "2026-09-15",
+      "host": "Industry webinar",
+      "url": "https://semiwiki.com/",
+      "blurb": "Workload-speed verification for IP and SoCs — the gap between block tests and bring-up."
+    },
+    {
+      "name": "RISC-V International technical webinars",
+      "date": null,
+      "host": "RISC-V International",
+      "url": "https://riscv.org/webinars/",
+      "blurb": "ISA, software, and ecosystem sessions from the RISC-V community calendar."
+    },
+    {
+      "name": "Accellera standards and verification updates",
+      "date": null,
+      "host": "Accellera",
+      "url": "https://www.accellera.org/",
+      "blurb": "UVM, SystemC, IP-XACT, and the standards that keep SoC integration contracts stable."
+    },
+    {
+      "name": "OpenROAD / OpenLane community sessions",
+      "date": null,
+      "host": "The OpenROAD Project",
+      "url": "https://theopenroadproject.org/",
+      "blurb": "Open ASIC implementation: RTL-to-GDS, PDKs, and what actually tapes out."
+    }
+  ]
+}

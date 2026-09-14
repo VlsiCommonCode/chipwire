@@ -23,7 +23,8 @@
       "Rocket",
       "BOOM",
       "TileLink",
-      "Accelerators"
+      "Accelerators",
+      "Chiplet"
     ],
     "desc": "Configurable framework for composing RISC-V cores, memory systems, peripherals and accelerators.",
     "github": "https://github.com/ucb-bar/chipyard"
@@ -37,7 +38,8 @@
     "tags": [
       "Generator",
       "TileLink",
-      "Caches"
+      "Caches",
+      "Chiplet"
     ],
     "desc": "Parameterizable RISC-V core and SoC generator used by many research platforms.",
     "github": "https://github.com/chipsalliance/rocket-chip"
@@ -222,5 +224,49 @@
     ],
     "desc": "Python-based verification framework useful for RISC-V cores and SoC blocks.",
     "github": "https://github.com/cocotb/cocotb"
+  },
+  {
+    "name": "OpenTitan",
+    "repo": "lowRISC/opentitan",
+    "type": "Security",
+    "isa": "RV32",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "Root of trust",
+      "OpenTitan",
+      "Security",
+      "Ibex"
+    ],
+    "desc": "Open silicon root of trust — inspectable RTL, firmware, and a manufacturing-oriented security lifecycle.",
+    "github": "https://github.com/lowRISC/opentitan"
+  },
+  {
+    "name": "Caliptra",
+    "repo": "chipsalliance/caliptra-rtl",
+    "type": "Security",
+    "isa": "RV32",
+    "rtl": "SystemVerilog",
+    "tags": [
+      "Root of trust",
+      "Datacenter",
+      "Security"
+    ],
+    "desc": "CHIPS Alliance root of trust for cloud and datacenter silicon packages.",
+    "github": "https://github.com/chipsalliance/caliptra-rtl"
+  },
+  {
+    "name": "CHERIoT RTOS",
+    "repo": "microsoft/cheriot-rtos",
+    "type": "Security",
+    "isa": "RV32",
+    "rtl": "C++",
+    "tags": [
+      "CHERI",
+      "Capabilities",
+      "Security",
+      "RTOS"
+    ],
+    "desc": "Compartmentalizing RTOS for CHERI-RISC-V microcontroller-class cores.",
+    "github": "https://github.com/microsoft/cheriot-rtos"
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "cpus": [
+    {"name": "CVA6", "isa": "RV64GC", "pipeline": "In-order, 6-stage", "bus": "AXI", "rtl": "SystemVerilog", "linux": "Yes", "license": "Solderpad", "url": "https://github.com/openhwgroup/cva6"},
+    {"name": "BOOM", "isa": "RV64", "pipeline": "Out-of-order, superscalar", "bus": "TileLink", "rtl": "Chisel", "linux": "Yes", "license": "BSD", "url": "https://github.com/riscv-boom/riscv-boom"},
+    {"name": "Ibex", "isa": "RV32", "pipeline": "In-order, 2–3 stage", "bus": "AHB/custom", "rtl": "SystemVerilog", "linux": "No", "license": "Apache-2.0", "url": "https://github.com/lowRISC/ibex"},
+    {"name": "CV32E40P", "isa": "RV32", "pipeline": "In-order, 4-stage", "bus": "OBI/AXI", "rtl": "SystemVerilog", "linux": "No", "license": "Solderpad", "url": "https://github.com/openhwgroup/cv32e40p"},
+    {"name": "VexRiscv", "isa": "RV32", "pipeline": "Generated, configurable", "bus": "Wishbone/AXI", "rtl": "SpinalHDL", "linux": "Optional", "license": "MIT", "url": "https://github.com/SpinalHDL/VexRiscv"},
+    {"name": "PicoRV32", "isa": "RV32", "pipeline": "Small / multi-cycle", "bus": "Native/AXI", "rtl": "Verilog", "linux": "No", "license": "ISC", "url": "https://github.com/YosysHQ/picorv32"}
+  ],
+  "socs": [
+    {"name": "Chipyard", "lang": "Chisel", "bus": "TileLink", "cores": "Rocket, BOOM, …", "target": "FPGA + ASIC research", "url": "https://github.com/ucb-bar/chipyard"},
+    {"name": "Rocket Chip", "lang": "Chisel", "bus": "TileLink", "cores": "Rocket", "target": "Generators / research", "url": "https://github.com/chipsalliance/rocket-chip"},
+    {"name": "LiteX", "lang": "Python/HDL", "bus": "Wishbone / AXI", "cores": "Vex, Pico, …", "target": "FPGA SoCs", "url": "https://github.com/enjoy-digital/litex"},
+    {"name": "NEORV32", "lang": "VHDL", "bus": "Wishbone", "cores": "NEORV32", "target": "MCU-class FPGA", "url": "https://github.com/stnolting/neorv32"},
+    {"name": "SweRVolf", "lang": "Verilog", "bus": "Wishbone", "cores": "SweRV", "target": "FPGA SoC", "url": "https://github.com/chipsalliance/Cores-SweRVolf"}
+  ]
+}

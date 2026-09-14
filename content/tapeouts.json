@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "name": "OpenTitan Earl Grey",
+      "program": "Open silicon RoT",
+      "node": "Multiple foundry targets",
+      "year": "2022–",
+      "url": "https://opentitan.org/",
+      "blurb": "Inspectable root-of-trust silicon with public RTL, DV, and a manufacturing lifecycle."
+    },
+    {
+      "name": "YiFive",
+      "program": "OpenLane / SKY130",
+      "node": "SKY130",
+      "year": "OpenMPW era",
+      "url": "https://github.com/dineshannayya/yifive_r0",
+      "blurb": "Open RISC-V SoC taken through the public OpenLane flow on SKY130."
+    },
+    {
+      "name": "retroSoC",
+      "program": "SKY130 / GF180",
+      "node": "SKY130 · GF180",
+      "year": "Open ASIC",
+      "url": "https://github.com/retroSoC/retroSoC",
+      "blurb": "RTL, software, simulation and open-source ASIC targets in one tree."
+    },
+    {
+      "name": "Caravel / OpenMPW user projects",
+      "program": "Efabless OpenMPW",
+      "node": "SKY130",
+      "year": "2020–",
+      "url": "https://github.com/efabless/caravel",
+      "blurb": "The harness most SKY130 shuttle projects drop into — useful bring-up reference even if you never tape out."
+    },
+    {
+      "name": "OpenLane reference designs",
+      "program": "OpenROAD",
+      "node": "SKY130 · GF180",
+      "year": "Ongoing",
+      "url": "https://openlane.readthedocs.io/",
+      "blurb": "Hardened examples and flow configs that show what actually closes timing on public PDKs."
+    }
+  ]
+}

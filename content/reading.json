@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "title": "The RISC-V Reader (Patterson & Waterman)",
+      "kind": "book",
+      "url": "http://www.riscvbook.com/",
+      "blurb": "Compact ISA introduction — the fastest way to read RV32I before the unprivileged spec."
+    },
+    {
+      "title": "Digital Design and Computer Architecture: RISC-V Edition",
+      "kind": "book",
+      "url": "https://www.elsevier.com/books/digital-design-and-computer-architecture-risc-v-edition/harris/978-0-12-820064-3",
+      "blurb": "Datapath, pipeline, and memory from gates to a RISC-V core — the SoC-adjacent textbook."
+    },
+    {
+      "title": "The RISC-V Instruction Set Manual",
+      "kind": "specification",
+      "url": "https://riscv.org/technical/specifications/",
+      "blurb": "Unprivileged and privileged ISA specs — the contract every core and toolchain has to honor."
+    },
+    {
+      "title": "RISC-V Privileged Architecture",
+      "kind": "specification",
+      "url": "https://riscv.org/technical/specifications/",
+      "blurb": "M/S/U modes, CSRs, traps, virtual memory — required reading before an MMU or Linux port."
+    },
+    {
+      "title": "AMBA AXI / ACE Protocol Specification",
+      "kind": "specification",
+      "url": "https://developer.arm.com/documentation/ihi0022/latest/",
+      "blurb": "The dominant SoC interconnect contract: channels, ordering, and what caches actually promise."
+    },
+    {
+      "title": "TileLink Specification (SiFive / Rocket Chip)",
+      "kind": "specification",
+      "url": "https://github.com/chipsalliance/rocket-chip",
+      "blurb": "The coherent bus used by Rocket, BOOM, and Chipyard — different tradeoffs from AXI."
+    },
+    {
+      "title": "OpenTitan documentation",
+      "kind": "guide",
+      "url": "https://opentitan.org/",
+      "blurb": "How an open root of trust is specified, verified, and taken through a silicon lifecycle."
+    },
+    {
+      "title": "OpenLane / OpenROAD documentation",
+      "kind": "guide",
+      "url": "https://openlane.readthedocs.io/",
+      "blurb": "Practical RTL-to-GDS on SKY130 and GF180 — the flow most open tapeouts actually run."
+    },
+    {
+      "title": "CHERI ISA and software papers",
+      "kind": "papers",
+      "url": "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/",
+      "blurb": "Capability hardware, compartmentalization, and what CHERI-RISC-V changes in the compiler."
+    },
+    {
+      "title": "Hot Chips archives",
+      "kind": "talks",
+      "url": "https://hotchips.org/",
+      "blurb": "CPU, GPU, and accelerator architecture talks that usually precede product announcements."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "SemiWiki Podcast",
+      "kind": "podcast",
+      "url": "https://semiwiki.com/",
+      "blurb": "Industry interviews across EDA, IP, foundries, and architecture — use as a pointer, not a reprint."
+    },
+    {
+      "title": "RISC-V International YouTube",
+      "kind": "video",
+      "url": "https://www.youtube.com/@RISC-VInternational",
+      "blurb": "Summit talks, workshops, and extension explanations from the ISA body."
+    },
+    {
+      "title": "Hot Chips recorded talks",
+      "kind": "video",
+      "url": "https://hotchips.org/",
+      "blurb": "Architecture deep dives on CPUs, GPUs, HBM, and chiplets."
+    },
+    {
+      "title": "lowRISC / OpenTitan technical talks",
+      "kind": "video",
+      "url": "https://www.lowrisc.org/",
+      "blurb": "Silicon bring-up, secure boot, and the engineering behind an open root of trust."
+    },
+    {
+      "title": "Chips and Cheese",
+      "kind": "writing",
+      "url": "https://chipsandcheese.com/",
+      "blurb": "Microarchitecture measurements — more technical than conventional semiconductor news."
+    },
+    {
+      "title": "EE Times silicon and EDA coverage",
+      "kind": "video",
+      "url": "https://www.eetimes.com/",
+      "blurb": "Architecture and industry pieces that pair well with the IMPEDRA news feed."
+    }
+  ]
+}

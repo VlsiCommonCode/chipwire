@@ -64,7 +64,7 @@ function categoryLabel(id, cats){
  return hit?hit.label:id;
 }
 async function loadNewsData(){
- let data=(typeof window!=="undefined"&&window.CHIPWIRE_NEWS)||null;
+ let data=(typeof window!=="undefined"&&(window.IMPEDRA_NEWS||window.CHIPWIRE_NEWS))||null;
  if(!data||!Array.isArray(data.items)||!data.items.length){
   data=await getJSON("data/industry-news.json");
  }
@@ -301,7 +301,7 @@ function initDigestForm(){
   e.preventDefault();
   const email=form.email.value.trim();
   if(!email)return;
-  window.open(issueUrl("Digest signup","Please add this address to the chipwire.ai weekly digest.\n\n"+email+"\n"),"_blank","noopener");
+  window.open(issueUrl("Digest signup","Please add this address to the impedra.ai weekly digest.\n\n"+email+"\n"),"_blank","noopener");
   const status=document.querySelector("#digest-status");
   if(status){status.hidden=false; status.textContent="GitHub issue window opened — submit it while signed in to finish the request.";}
  });

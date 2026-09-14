@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "SemiWiki CEO Interview with Dr. Nissan Maskil of Qarakal Quantum",
+      "source": "SemiWiki",
+      "url": "https://semiwiki.com/ceo-interviews/373457-semiwiki-ceo-interview-with-dr-nissan-maskil-of-qarakal-quantum/",
+      "takeaway": "A founder view of quantum hardware programs that sit next to conventional semiconductor supply chains.",
+      "org": "Qarakal Quantum"
+    },
+    {
+      "title": "SiFive on the RISC-V software and silicon gap",
+      "source": "RISC-V International",
+      "url": "https://riscv.org/",
+      "takeaway": "Why cores are no longer the scarce part — toolchains, privileged software, and SoC IP are.",
+      "org": "SiFive"
+    },
+    {
+      "title": "lowRISC and the case for inspectable silicon",
+      "source": "lowRISC",
+      "url": "https://www.lowrisc.org/",
+      "takeaway": "OpenTitan’s argument: a root of trust is only as strong as the ability to audit the RTL.",
+      "org": "lowRISC"
+    },
+    {
+      "title": "OpenHW Group: making CORE-V production-shaped",
+      "source": "OpenHW Group",
+      "url": "https://www.openhwgroup.org/",
+      "takeaway": "Verification collateral, not just GitHub stars, is what moves a core from research to SoC IP.",
+      "org": "OpenHW"
+    },
+    {
+      "title": "CHERI: capabilities as an ISA contract",
+      "source": "University of Cambridge",
+      "url": "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/",
+      "takeaway": "Memory safety as an architectural feature rather than a software-only retrofit.",
+      "org": "CHERI"
+    },
+    {
+      "title": "Andes on RISC-V in automotive and DSP-class cores",
+      "source": "Andes Technology",
+      "url": "https://www.andestech.com/",
+      "takeaway": "Where custom extensions pay for themselves — and where they fragment the software stack.",
+      "org": "Andes"
+    }
+  ]
+}

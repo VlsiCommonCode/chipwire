@@ -3,20 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>chipwire.ai — Open Silicon</title>
+  <title>impedra.ai — Engineering the Intelligence Between Silicon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:site_name" content="chipwire.ai">
-  <meta property="og:title" content="chipwire.ai — Open Silicon">
-  <meta name="description" content="chipwire.ai — open silicon, mapped. RISC-V, CPUs, SoCs, verification, FPGA and open ASIC.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://impedra.ai/">
+  <meta property="og:site_name" content="impedra.ai">
+  <meta property="og:title" content="impedra.ai — Engineering the Intelligence Between Silicon">
+  <meta property="og:description" content="IMPEDRA explores semiconductor architecture, RISC-V, system IP, verification, open-source silicon and the technologies connecting modern chip systems.">
+  <meta property="og:url" content="https://impedra.ai/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="impedra.ai — Engineering the Intelligence Between Silicon">
+  <meta name="twitter:description" content="IMPEDRA explores semiconductor architecture, RISC-V, system IP, verification, open-source silicon and the technologies connecting modern chip systems.">
+  <meta name="description" content="IMPEDRA explores semiconductor architecture, RISC-V, system IP, verification, open-source silicon and the technologies connecting modern chip systems.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"impedra.ai","url":"https://impedra.ai/","logo":"https://impedra.ai/logo.svg","description":"IMPEDRA explores semiconductor architecture, RISC-V, system IP, verification, open-source silicon and the technologies connecting modern chip systems.","sameAs":["https://github.com/VlsiCommonCode/chipwire"]}
+  </script>
 </head>
 <body class="page-home">
 
   <header>
     <div class="wrap nav">
-      <a class="brand" href="index.html">chipwire.ai</a>
+      <a class="brand" href="index.html">impedra.ai<img class="brand-mark" src="logo.svg" width="120" height="24" alt=""></a>
       <nav>
         <a href="projects.html">Projects</a>
         <a href="news.html">News</a>
@@ -24,6 +35,7 @@
         <a href="topics.html">Topics</a>
         <a href="verification.html">Verification</a>
         <a href="learn.html">Learn</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
@@ -33,15 +45,20 @@
     <section class="hero-stage">
       <div class="hero-atmosphere" aria-hidden="true"></div>
       <div class="wrap hero-stage-inner">
-        <p class="hero-brand reveal">chipwire.ai</p>
-        <h1 class="reveal delay-1">The map from ISA to silicon.</h1>
+        <p class="wordmark reveal">impedra.ai</p>
+        <img class="hero-logo reveal delay-1" src="logo.svg" width="320" height="64" alt="impedra.ai — series R and L, the impedance between blocks">
+        <h1 class="reveal delay-1">Engineering the intelligence<br>between silicon.</h1>
+        <blockquote class="hero-quote reveal delay-2">The hardest problems in semiconductor systems live between the blocks.</blockquote>
         <p class="hero-lead reveal delay-2">
-          A curated path through open RISC-V — cores, interconnect, verification, FPGA and open ASIC —
-          so engineers find the right project for the problem they are solving.
+          IMPEDRA explores, builds and connects the technologies that make complex silicon systems work —
+          from RISC-V and system IP to verification, interconnect, memory and emerging chip architectures.
         </p>
-        <div class="hero-links reveal delay-3">
-          <a class="cta" href="projects.html">Explore the map</a>
-          <a class="cta-secondary" href="search.html">Search</a>
+        <div class="term-links reveal delay-3">
+          <a href="projects.html">[ Explore projects ]</a>
+          <a href="topics.html">[ Semiconductor knowledge ]</a>
+          <a href="verification.html">[ Verification ]</a>
+          <a href="topics.html#cpu">[ RISC-V ]</a>
+          <a href="topics.html#ip">[ System IP ]</a>
         </div>
         <div class="hero-path reveal delay-4" aria-hidden="true">
           <span>ISA</span><i></i>
@@ -178,7 +195,7 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <span>© 2026 chipwire.ai</span>
+      <span>© 2026 impedra.ai</span>
       <span>
         <a class="section-link" href="orgs.html">Ecosystem</a>
         · <a class="section-link" href="india.html">India</a>
@@ -186,6 +203,7 @@
         · <a class="section-link" href="silicon.html">Tapeouts</a>
         · <a class="section-link" href="search.html">Search</a>
         · <a class="section-link" href="ask.html">Ask</a>
+        · <a class="section-link" href="about.html">About</a>
       </span>
     </div>
   </footer>

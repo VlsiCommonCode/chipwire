@@ -1,0 +1,95 @@
+{
+  "orgs": [
+    {
+      "name": "RISC-V International",
+      "url": "https://riscv.org/",
+      "focus": "ISA",
+      "tags": ["RISC-V", "Standards", "Ecosystem"],
+      "blurb": "The ISA home: specifications, extensions, and the software/hardware compatibility story."
+    },
+    {
+      "name": "CHIPS Alliance",
+      "url": "https://chipsalliance.org/",
+      "focus": "Open hardware",
+      "tags": ["RTL", "Verification", "Generators"],
+      "blurb": "Open RTL, generators, and verification IP used across RISC-V cores and SoC frameworks."
+    },
+    {
+      "name": "OpenHW Group",
+      "url": "https://www.openhwgroup.org/",
+      "focus": "Cores",
+      "tags": ["CVA6", "CV32", "CORE-V"],
+      "blurb": "Industrial-grade CORE-V cores with verification collateral aimed at production SoCs."
+    },
+    {
+      "name": "lowRISC",
+      "url": "https://www.lowrisc.org/",
+      "focus": "Security + silicon",
+      "tags": ["Ibex", "OpenTitan", "Silicon"],
+      "blurb": "Ibex, OpenTitan, and a silicon-first approach to open, inspectable hardware."
+    },
+    {
+      "name": "OpenTitan",
+      "url": "https://opentitan.org/",
+      "focus": "Root of trust",
+      "tags": ["Security", "RoT", "open silicon"],
+      "blurb": "Transparent silicon root of trust — RTL, firmware, and manufacturing flow in the open."
+    },
+    {
+      "name": "SiFive",
+      "url": "https://www.sifive.com/",
+      "focus": "RISC-V IP",
+      "tags": ["CPU", "SoC", "IP"],
+      "blurb": "Commercial RISC-V cores and platforms that still sit next to the open-ISA ecosystem."
+    },
+    {
+      "name": "Andes Technology",
+      "url": "https://www.andestech.com/",
+      "focus": "RISC-V IP",
+      "tags": ["CPU", "DSP", "Automotive"],
+      "blurb": "RISC-V CPU IP spanning embedded, DSP-class, and automotive-oriented cores."
+    },
+    {
+      "name": "Accellera",
+      "url": "https://www.accellera.org/",
+      "focus": "Standards",
+      "tags": ["UVM", "SystemC", "IP-XACT"],
+      "blurb": "The standards body behind UVM, SystemC, and IP integration formats used in SoC design."
+    },
+    {
+      "name": "SEMI",
+      "url": "https://www.semi.org/",
+      "focus": "Manufacturing",
+      "tags": ["Fabs", "Equipment", "Workforce"],
+      "blurb": "The microelectronics manufacturing ecosystem — equipment, materials, and policy."
+    },
+    {
+      "name": "India Semiconductor Mission",
+      "url": "https://ism.gov.in/",
+      "focus": "India",
+      "tags": ["Policy", "Fabs", "Design"],
+      "blurb": "India’s national program for manufacturing, ATMP, and design-linked incentives."
+    },
+    {
+      "name": "CHERI",
+      "url": "https://www.cl.cam.ac.uk/research/security/ctsrd/cheri/",
+      "focus": "Security",
+      "tags": ["Capabilities", "Memory safety", "ISA"],
+      "blurb": "Capability hardware for spatial memory safety — including CHERI-RISC-V and CHERIoT."
+    },
+    {
+      "name": "UCIe Consortium",
+      "url": "https://www.uciexpress.org/",
+      "focus": "Chiplets",
+      "tags": ["UCIe", "Die-to-die", "Packaging"],
+      "blurb": "The open die-to-die interconnect standard behind most chiplet packaging conversations."
+    },
+    {
+      "name": "The OpenROAD Project",
+      "url": "https://theopenroadproject.org/",
+      "focus": "Open ASIC",
+      "tags": ["OpenLane", "P&R", "PDK"],
+      "blurb": "Open RTL-to-GDS implementation used by OpenLane, Caravel, and university tapeouts."
+    }
+  ]
+}

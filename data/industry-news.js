@@ -1,0 +1,923 @@
+window.IMPEDRA_NEWS = {
+  "updated_at": "2026-09-14T16:00:44.368617+00:00",
+  "home_limit": 12,
+  "categories": [
+    {
+      "id": "industry",
+      "label": "Industry",
+      "description": "Tier-1 semiconductor, foundry, and market coverage."
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture & Design",
+      "description": "CPUs, SoCs, EDA, verification, and microarchitecture deep dives."
+    },
+    {
+      "id": "riscv",
+      "label": "RISC-V & Open Hardware",
+      "description": "RISC-V International, lowRISC, and open silicon ecosystem news."
+    },
+    {
+      "id": "ai-silicon",
+      "label": "AI Silicon",
+      "description": "Accelerators, GPUs, datacenters, and AI infrastructure economics."
+    },
+    {
+      "id": "manufacturing",
+      "label": "Manufacturing",
+      "description": "Fabs, equipment, packaging, and the broader SEMI ecosystem."
+    },
+    {
+      "id": "conferences",
+      "label": "Conferences",
+      "description": "DVCon and design/verification conference signals."
+    },
+    {
+      "id": "india",
+      "label": "India Semiconductor",
+      "description": "India ecosystem coverage \u2014 policy, manufacturing, and design."
+    }
+  ],
+  "items": [
+    {
+      "title": "A Bridge Too Far? How Standards-Based Sensor Integration Saves Size, Power, and Cost",
+      "url": "https://www.electronicdesign.com/technologies/analog/article/55404798/valens-semiconductor-a-bridge-too-far-how-standards-based-sensor-integration-saves-size-power-and-cost",
+      "source": "Electronic Design",
+      "source_url": "https://www.electronicdesign.com/",
+      "published": "2026-09-14T15:51:56+00:00",
+      "summary": "As automotive cameras proliferate, standards-based sensor integration using MIPI A-PHY is emerging as a smarter way to reduce module size, power consumption, and system cost by\u2026",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Damac and Vodafone launch Turkish data center",
+      "url": "https://www.datacenterdynamics.com/en/news/damac-and-vodafone-launch-turkish-data-center/",
+      "source": "Data Center Dynamics",
+      "source_url": "https://www.datacenterdynamics.com/",
+      "published": "2026-09-14T15:47:47+00:00",
+      "summary": "Facility launches with 4MW, scalable to 20MW",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Edged tops out data centers in Council Bluffs, Iowa",
+      "url": "https://www.datacenterdynamics.com/en/news/edged-tops-out-data-centers-in-council-bluffs-iowa/",
+      "source": "Data Center Dynamics",
+      "source_url": "https://www.datacenterdynamics.com/",
+      "published": "2026-09-14T15:45:26+00:00",
+      "summary": "Structural work on two buildings at 200MW campus complete",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Russian drone attack hits Kyivstar office in Ukraine",
+      "url": "https://www.datacenterdynamics.com/en/news/russian-drone-attack-hits-kyivstar-office-in-ukraine/",
+      "source": "Data Center Dynamics",
+      "source_url": "https://www.datacenterdynamics.com/",
+      "published": "2026-09-14T15:40:32+00:00",
+      "summary": "The telco confirms nobody was injured",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Flexxbotics Unveils Latest Platform for Manufacturing Autonomy",
+      "url": "https://www.designnews.com/automation/flexxbotics-unveils-latest-platform-for-manufacturing-autonomy",
+      "source": "Design News",
+      "source_url": "https://www.designnews.com/",
+      "published": "2026-09-14T15:28:13+00:00",
+      "summary": "Software-defined factory technology connects production data to autonomous actions for increased capacity.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "ALD System Design is the Key to Proper Precursor Gas Delivery",
+      "url": "https://www.semiconductor-digest.com/ald-system-design-is-the-key-to-proper-precursor-gas-delivery/?utm_source=rss&utm_medium=rss&utm_campaign=ald-system-design-is-the-key-to-proper-precursor-gas-delivery",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/",
+      "published": "2026-09-14T15:20:13+00:00",
+      "summary": "Atomic layer deposition depends on delivering precursor gas to the reaction chamber with sub-millisecond precision. The post ALD System Design is the Key to Proper Precursor Gas\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Precision Under Pressure: Ensuring Quality in a Globalized and Miniaturized Semiconductor Industry",
+      "url": "https://www.semiconductor-digest.com/precision-under-pressure-ensuring-quality-in-a-globalized-and-miniaturized-semiconductor-industry/?utm_source=rss&utm_medium=rss&utm_campaign=precision-under-pressure-ensuring-quality-in-a-globalized-and-miniaturized-semiconductor-industry",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/",
+      "published": "2026-09-14T15:12:50+00:00",
+      "summary": "Traditional measurement approaches like strain gauges and LVDT displacement sensors are reaching their limits for detecting the minuscule forces and rapid dynamics involved. The\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Semiconductor Engineering Has a State-Continuity Problem",
+      "url": "https://semiwiki.com/eda/373472-semiconductor-engineering-has-a-state-continuity-problem/",
+      "source": "SemiWiki",
+      "source_url": "https://semiwiki.com/",
+      "published": "2026-09-14T15:00:24+00:00",
+      "summary": "Product realization depends not only on reaching the next engineering state, but on preserving the relationships between states from intent through qualification, release, and\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "BeeGFS runs on Huawai OceanDisk storage servers",
+      "url": "https://www.blocksandfiles.com/flash/2026/09/14/beegfs-runs-on-huawai-oceandisk-storage-servers/5296296",
+      "source": "Blocks and Files",
+      "source_url": "https://blocksandfiles.com/",
+      "published": "2026-09-14T14:52:11+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Scaleout Software\u2019s in-memory digital twins for generative AI",
+      "url": "https://www.blocksandfiles.com/ai-ml/2026/09/14/scaleout-softwares-in-memory-digital-twins-for-generative-ai/5296263",
+      "source": "Blocks and Files",
+      "source_url": "https://blocksandfiles.com/",
+      "published": "2026-09-14T14:33:46+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Australia sets LNG reserve rules to protect domestic supply and cap prices",
+      "url": "https://www.digitimes.com/news/a20260914PD246/australia-market-policy-government-demand.html",
+      "source": "DigiTimes",
+      "source_url": "https://www.digitimes.com/",
+      "published": "2026-09-14T14:29:00+00:00",
+      "summary": "Australia introduced a liquefied natural gas reserve policy aimed at prioritizing domestic supply, while producers warned the rules could pressure prices if the market becomes\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Seagate bigging up disk drives as strategic AI data stores",
+      "url": "https://www.blocksandfiles.com/disk/2026/09/14/seagate-bigging-up-disk-drives-as-strategic-ai-data-stores/5296114",
+      "source": "Blocks and Files",
+      "source_url": "https://blocksandfiles.com/",
+      "published": "2026-09-14T14:16:40+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "SoC Switch Supports 260 PCI Express Lanes",
+      "url": "https://www.electronicdesign.com/technologies/communications/product/55404606/electronic-design-soc-switch-supports-260-pci-express-lanes",
+      "source": "Electronic Design",
+      "source_url": "https://www.electronicdesign.com/",
+      "published": "2026-09-14T13:55:53+00:00",
+      "summary": "Marvell's Structera S 60260 targets AI data center scale-up infrastructure.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Teravolt looks to cannibalize older industries to meet AI power demand",
+      "url": "https://www.theregister.com/ai-and-ml/2026/09/14/teravolt-looks-to-cannibalize-older-industries-to-meet-ai-power-demand/5296014",
+      "source": "The Register",
+      "source_url": "https://www.theregister.com/",
+      "published": "2026-09-14T13:45:00+00:00",
+      "summary": "Bitcoin farms, aluminum smelters, and other old infra is more lucrative to repurpose as a datacenter",
+      "category": "industry",
+      "tier": 2
+    },
+    {
+      "title": "Kokusai Electric gains from Hitachi split as AI memory demand surges",
+      "url": "https://www.digitimes.com/news/a20260914PD245/kokusai-hitachi-demand-equipment-business.html",
+      "source": "DigiTimes",
+      "source_url": "https://www.digitimes.com/",
+      "published": "2026-09-14T13:27:00+00:00",
+      "summary": "Kokusai Electric, the semiconductor equipment maker spun off from Hitachi and later acquired by KKR, has emerged as one of the clearest winners from Hitachi's restructuring.\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Drone Takes Ozone Measurements Over Mt. Qomolangma",
+      "url": "https://www.electronicdesign.com/technologies/test-measurement/article/55404690/electronic-design-scientists-take-ozone-measurements-over-mount-qomolangma-using-a-drone",
+      "source": "Electronic Design",
+      "source_url": "https://www.electronicdesign.com/",
+      "published": "2026-09-14T13:07:13+00:00",
+      "summary": "A modified drone helped scientists measure how ozone moves through the harsh atmosphere above Mount Qomolangma.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Samtec Puts AI\u2019s Interconnect Bottleneck on Display at ECOC and AI Infra Summit",
+      "url": "https://semiwiki.com/semiconductor-services/samtec/373513-samtec-puts-ais-interconnect-bottleneck-on-display-at-ecoc-and-ai-infra-summit/",
+      "source": "SemiWiki",
+      "source_url": "https://semiwiki.com/",
+      "published": "2026-09-14T13:00:33+00:00",
+      "summary": "Samtec is using two major 2026 industry events to make a clear engineering argument: faster accelerators alone will not determine the performance of next-generation\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Ambient IoT: From Battery-Free Promise to Mass-Market Reality",
+      "url": "https://www.eetimes.com/ambient-iot-from-battery-free-promise-to-mass-market-reality/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-14T12:26:58+00:00",
+      "summary": "Surging investment, maturing tech, and emerging standards are pushing ambient IoT toward mainstream deployment. The post Ambient IoT: From Battery-Free Promise to Mass-Market\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "LG sells 15 US image patents to Honor as IP monetization expands",
+      "url": "https://www.digitimes.com/news/a20260914PD243/lg-lg-electronics-honor-patent-technology.html",
+      "source": "DigiTimes",
+      "source_url": "https://www.digitimes.com/",
+      "published": "2026-09-14T12:24:00+00:00",
+      "summary": "LG Electronics has transferred 15 US image-related standard essential patents to Honor in late August 2026, according to South Korean media reports citing US Patent and Trademark\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Micron offers Taiwan employees $31,650 cash bonus as unions threaten strike over AI windfall \u2014 workers reject record payout package, demand 15% profit-sharing plan",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/micron-offers-taiwan-employees-usd31-650-cash-bonus-as-unions-threaten-strike-over-ai-windfall-workers-reject-record-payout-package-demand-15-percent-profit-sharing-plan",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/",
+      "published": "2026-09-14T12:00:00+00:00",
+      "summary": "Micron is offering Taiwan employees a NT$1 million cash bonus, but unions have rejected the package and are demanding permanent profit sharing as strike talks continue.",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "SEMICON India 2026: PM Modi to launch fifth edition in Delhi on Sept 17 - Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQMnJNUDF3LUVpUmlGZXQ4NllVTkRhMS1qeWVxOW1wNjlSNVgwcng2UDkwX2ZmVWtGTEt1T0ZWY2ViLUdxeXRuXzRaN29uOFczQ2ZZRjVNQjl6US1xM0VFdGJ5TUVVbzhITnNjTElpYl9HTEdhUFFHWkV2bThnTUVIMG9lVU1QWmZBdWp1Z2VXMmVEQ01POElOaDJ0c3o4Yk5pZGh3aEVLYUNydnFCdGdTdXlRcG9KeVdVa1FBWXpsQi1wUzhfUktYNGxYekRZVWJMV3REM1F6eC1TYjgtMkpUZHE1bVNvNXhrMUpSR3FkWXM?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-14T11:59:03+00:00",
+      "summary": "SEMICON India 2026: PM Modi to launch fifth edition in Delhi on Sept 17 Deccan Herald",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "UAE commits EUR40B to expand Germany ties in AI, energy and defense",
+      "url": "https://www.digitimes.com/news/a20260914PD244/germany-uae-europe-investment-france.html",
+      "source": "DigiTimes",
+      "source_url": "https://www.digitimes.com/",
+      "published": "2026-09-14T11:26:00+00:00",
+      "summary": "The United Arab Emirates said it plans to invest EUR40 billion in Germany, or about US$46 billion, across artificial intelligence, energy and defense as it deepens economic and\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "PM Modi to inaugurate SEMICON India 2026 on Sept 17, showcase India\u2019s growing semiconductor prowess - DD News",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQZzhZWUJja0xocFFvcVR2RkJtOEVWZS1FN1ZhQk02OC1WS0Nad2poSDBCLVpSY2tXSWhVSTJFV1QxQklxdzN3MmpLdVZFcXJsblAybzhZY255UmJQR1A1WVNFaXdtOElOWkdROE9nNXZhU2U3UHloNFF4aGpqSVJMRG1nUnJWZHZxUFlLR0NxcDVqWklsLXVKR1dOM3IyRU1NN0hQX3ViZm1BdTdrcExtNEJLRHJPZXNWX3JKRUd1Mkk?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-14T09:53:24+00:00",
+      "summary": "PM Modi to inaugurate SEMICON India 2026 on Sept 17, showcase India\u2019s growing semiconductor prowess DD News",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "PM Narendra Modi to inaugurate SEMICON India 2026 in Delhi - Utkarsh Classes",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQb3p5SUJ0TVNtQ1ZzM1JZbzctZVhnZzFDUTZSNUJPQmktaTlROWlmMjM3THZmU1BXNXZCNFZZRGU5M2M3VHRwSDlxU2syVnBtblJUN2VKTzlxYldMenU2UHBSY3NibmFoVmxVbkhwTDJFc2pjQ096em96SGVDY18zSEZXRkQ2dW5veXk5LTB3RmdaQm54NUlwNlNnZ05aYi1zSzNYakZLR2NhNHllVGZBSVZHYVhhMUJnUV9nYkNzbGxzUQ?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-14T09:37:44+00:00",
+      "summary": "PM Narendra Modi to inaugurate SEMICON India 2026 in Delhi Utkarsh Classes",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "PM Modi inaugurates Micron Technology\u2019s Semiconductor plant at Sanand in Gujarat - News On AIR",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUWVjSlFkVko4c2Ytd0V1cXZtN0kzbWxXNktTYTZEV2RTTUpNWmtiMXVNT3lwUVcyWGZaaUk5M001SjdMOU1aV185VWl6TVQtOWdsaWdXNngxcmg1TkppV2JIQ3lDOHJBWHJYZ3J4MWZWTTR2OWo1aHZ3ZEd2dVR4c2pYSkgwbVZJNUd3ejB4bkpHYzktYVNBT0Z0NldfZmxFUkQ1dmpUOTBUb083V2h3Q0NKeFhnT2RlZUpLREdzQQ?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-14T09:37:39+00:00",
+      "summary": "PM Modi inaugurates Micron Technology\u2019s Semiconductor plant at Sanand in Gujarat News On AIR",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "Taiwan drone maker Twoway breaks into US defense supply chain with Oklahoma procurement deal",
+      "url": "https://www.digitimes.com/news/a20260914PD240/security-demand-2026-revenue-business.html",
+      "source": "DigiTimes",
+      "source_url": "https://www.digitimes.com/",
+      "published": "2026-09-14T09:24:32+00:00",
+      "summary": "Twoway has signed an agency procurement contract with a purchasing delegation from Oklahoma, marking a breakthrough in its defense strategy as it expands North American deployment\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "PM Modi to inaugurate SEMICON India on September 17; 600 exhibitors to showcase semiconductor ecosystem - fortuneindia.com",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNeGE5RENGOEdTUmVieVRqS1FEbVhuYXpzcENRRHQ2NGpTUTBXZEpMWkZkTjNwWngwazFmb2EzLWVDY0l0Yk9UZ0pLSUlTNS10em16bnpvM2o5XzZ6d0dybXlBYlB1V2p5STk1dWRLbUVZZmdIbTB4UEQxdEw5OHdqRGNNTjNRZ0JXWlZmWWhoOWloRGhDeW5XOE92UkRVNDJ1YUV0OHpERnpoSVE1TERWZlpDNjdHVVY4UFNVeDlPZk01VFpzNzhHakJMSE5yVjA3MWZXc3Rhd2JTdGJyb1FCR3hjQS1nVmPSAfQBQVVfeXFMTUUyLWEwc3RpeHMxdUxlODdtTV9sUy1qZG5ZYVRpSDkxUXZIcVlTeUZkWHJlX2FjTi1ZN2Uyb0ZnYjlVNGNQVlItd245dnQ0Vk5UcnpxZzNpZmpDLVBzdk9zLVVESkx0Y1hGMGdDRXZUWnBqLVZWLTM5Qm03bUhRNXRjRlB5dENUNmxaa1dJQktBaU82VVRXWmx6MTNXSXNtYmM1WG5PTFpRNHBlVm0zSnlDRFpEMWlDaHZQOTIyQlNKYzI5TTB0Q25vOWtwUnRRX1FKWm9XbDFNM2JZMmJ4eUxwVm5NY19ZQ19FYms2TlZ5a1ZtNw?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-14T08:10:19+00:00",
+      "summary": "PM Modi to inaugurate SEMICON India on September 17; 600 exhibitors to showcase semiconductor ecosystem fortuneindia.com",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "Advanced Packaging Changes The Rules For Semiconductor Health And Performance Management",
+      "url": "https://semiengineering.com/advanced-packaging-changes-the-rules-for-semiconductor-health-and-performance-management/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-14T07:04:02+00:00",
+      "summary": "How to understand every chiplet inside the system-in-package. The post Advanced Packaging Changes The Rules For Semiconductor Health And Performance Management appeared first on\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Chip Industry Technical Paper Roundup: Sept. 14",
+      "url": "https://semiengineering.com/chip-industry-technical-paper-roundup-sept-14/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-14T07:01:44+00:00",
+      "summary": "Heterogeneous memory chiplets for multi-request LLM inference; long-span ECC for HBM AI inference; quasi phase-only EUV masks; advanced packaging underfill cure and\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Small Indian Manufacturers Hit Data, Legacy-System Barriers to Scaling AI",
+      "url": "https://www.eetimes.com/small-indian-manufacturers-hit-data-legacy-system-barriers-to-scaling-ai/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-14T05:53:04+00:00",
+      "summary": "AI adoption across manufacturing in India is progressing, but scaling it is running into structural problems across tiers. The post Small Indian Manufacturers Hit Data,\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "6nm Chips Bring AI to IoT Devices",
+      "url": "https://www.electronicsforu.com/news/6nm-chips-bring-ai-to-iot-devices",
+      "source": "Electronics For You",
+      "source_url": "https://www.electronicsforu.com/",
+      "published": "2026-09-14T05:38:30+00:00",
+      "summary": "New 6nm chips support local AI processing, computer vision, video processing, and low-power operation in cameras and Internet of Things devices. Amlogic has introduced two 6nm\u2026",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "Infineon RISC-V for Automotive at Hot Chips 2026",
+      "url": "https://www.servethehome.com/infineon-risc-v-for-automotive-at-hot-chips-2026/",
+      "source": "ServeTheHome",
+      "source_url": "https://www.servethehome.com/",
+      "published": "2026-09-13T21:58:44+00:00",
+      "summary": "At Hot Chips 2026, Infineon presented a case for using RISC-V in various automotive processors in next-generation cars The post Infineon RISC-V for Automotive at Hot Chips 2026\u2026",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Nvidia Sees AGI While OpenAI Sees Danger",
+      "url": "https://semiwiki.com/semiconductor-manufacturers/373466-nvidia-sees-agi-while-openai-sees-danger/",
+      "source": "SemiWiki",
+      "source_url": "https://semiwiki.com/",
+      "published": "2026-09-13T17:00:31+00:00",
+      "summary": "Jensen Huang\u2019s declaration that \u201cAGI has arrived\u201d is less a scientific verdict than a compressed statement about infrastructure, economics and momentum. His evidence is OpenAI\u2019s\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Samsung Might Be the Most Unusual Company on Earth",
+      "url": "https://semiwiki.com/semiconductor-manufacturers/samsung-foundry/372471-samsung-might-be-the-most-unusual-company-on-earth/",
+      "source": "SemiWiki",
+      "source_url": "https://semiwiki.com/",
+      "published": "2026-09-13T15:00:12+00:00",
+      "summary": "Samsung might be the most unusual company on earth because it is difficult to decide what kind of company it actually is. To most consumers, Samsung means smartphones,\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "SemiWiki CEO Interview with Dr. Nissan Maskil of Qarakal Quantum",
+      "url": "https://semiwiki.com/ceo-interviews/373457-semiwiki-ceo-interview-with-dr-nissan-maskil-of-qarakal-quantum/",
+      "source": "SemiWiki",
+      "source_url": "https://semiwiki.com/",
+      "published": "2026-09-13T13:00:24+00:00",
+      "summary": "Nissan Maskil, PhD, is the CEO and co-founder of Qarakal Quantum, established in 2024. Nissan brings 40 years of national technology program experience to Qarakal Quantum, where\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "The improbable music of the ZX Spectrum's one-bit speaker",
+      "url": "https://www.theregister.com/offbeat/2026/09/13/the-improbable-music-of-the-zx-spectrums-one-bit-speaker/5295862",
+      "source": "The Register",
+      "source_url": "https://www.theregister.com/",
+      "published": "2026-09-13T13:00:00+00:00",
+      "summary": "Ingenious coders coaxed multichannel chiptunes from the humblest of sound hardware",
+      "category": "industry",
+      "tier": 2
+    },
+    {
+      "title": "d-Matrix Joins the NVIDIA NVLink Fusion Platform",
+      "url": "https://www.servethehome.com/d-matrix-joins-the-nvidia-nvlink-fusion-platform/",
+      "source": "ServeTheHome",
+      "source_url": "https://www.servethehome.com/",
+      "published": "2026-09-12T21:42:59+00:00",
+      "summary": "d-Matrix and NVIDIA announced that d-Matrix will use NVLink Fusion to scale up and out with its next-gen Raptor AI accelerators The post d-Matrix Joins the NVIDIA NVLink Fusion\u2026",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Nvidia's Groq acquihire is on the DOJ's radar, but it's already too late",
+      "url": "https://www.theregister.com/systems/2026/09/12/nvidias-groq-acquihire-is-on-the-dojs-radar-but-its-already-too-late/5295986",
+      "source": "The Register",
+      "source_url": "https://www.theregister.com/",
+      "published": "2026-09-12T13:26:00+00:00",
+      "summary": "Even if regulators did somehow unwind the $20B deal, there's a growing list of alternatives ready to take Groq's place, no merger required",
+      "category": "industry",
+      "tier": 2
+    },
+    {
+      "title": "Inside Architect Labs\u2019 Two-Week Chip Design",
+      "url": "https://www.eetimes.com/inside-architect-labs-two-week-chip-design/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-12T02:00:00+00:00",
+      "summary": "Architect Labs says its AI can drag custom chip design from years to weeks with Redwood. The post Inside Architect Labs\u2019 Two-Week Chip Design appeared first on EE Times .",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Engineers Are the Ultimate Decision-Makers of Our World",
+      "url": "https://www.designnews.com/design-engineering/engineers-are-the-ultimate-decision-makers-of-our-world",
+      "source": "Design News",
+      "source_url": "https://www.designnews.com/",
+      "published": "2026-09-12T00:08:29+00:00",
+      "summary": "Embrace your responsibility.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Heterogeneous Memory Chiplets Accelerate Multi-Request LLM Inference (NUS)",
+      "url": "https://semiengineering.com/heterogeneous-memory-chiplets-accelerate-multi-request-llm-inference-nus/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-11T21:56:01+00:00",
+      "summary": "Researchers at the National University of Singapore published a technical paper titled \u201cCHIPSMORE: Compute-in-Interconnect and -Memory Chiplets for Multi-Mode Multi-Request LLM\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Reducing HBM ECC Controller Overhead For AI Inference (RPI, IBM)",
+      "url": "https://semiengineering.com/reducing-hbm-ecc-controller-overhead-for-ai-inference-rpi-ibm/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-11T21:43:18+00:00",
+      "summary": "Researchers at Rensselaer Polytechnic Institute and IBM T.J. Watson Research Center published a technical paper titled \u201cREACH: Controller-Managed Long-Span ECC for HBM AI\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Design for Cleanability Early On to Avoid Delays in Medtech Commercialization",
+      "url": "https://www.designnews.com/medical/design-for-cleanability-early-on-to-avoid-delays-in-medtech-commercialization",
+      "source": "Design News",
+      "source_url": "https://www.designnews.com/",
+      "published": "2026-09-11T21:37:25+00:00",
+      "summary": "With all the new materials and manufacturing tech now available, medtech design engineers should consider how novel devices can best be cleaned and devise plans early in\u2026",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Molybdenum Quasi Phase-Only Masks Improve EUV Imaging (NYCU, TSMC)",
+      "url": "https://semiengineering.com/molybdenum-quasi-phase-only-masks-improve-euv-imaging-nycu-tsmc/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-11T21:28:44+00:00",
+      "summary": "Researchers at National Yang Ming Chiao Tung University and TSMC published a technical paper titled \u201cHigh contrast EUV imaging enabled by topological quasi phase-only masks.\u201d\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Characterizing Charge Components In TMD-based MOS Structures (imec, KU Leuven, ASM)",
+      "url": "https://semiengineering.com/characterizing-charge-components-in-tmd-based-mos-structures-imec-ku-leuven-asm/",
+      "source": "Semiconductor Engineering",
+      "source_url": "https://semiengineering.com/",
+      "published": "2026-09-11T21:06:41+00:00",
+      "summary": "Researchers at imec, KU Leuven, and ASM published a technical paper titled \u201cDissecting the transition metal dichalcogenides-based metal-oxide-semiconductor structures charge\u2026",
+      "category": "architecture",
+      "tier": 1
+    },
+    {
+      "title": "Fabships Aim to Exploit \u2018Free\u2019 Space Vacuum for Compound Semiconductor Substrates",
+      "url": "https://www.eetimes.com/fabships-aim-to-exploit-free-space-vacuum-for-compound-semiconductor-substrates/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-11T21:00:00+00:00",
+      "summary": "Space is the next frontier for semiconductor manufacturing, as startup Besxar, founded by an ex-OpenAI technical director, completed its first SpaceX flight and recovered wafer\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Xanadu, ASML to Advance Lithography for Photonic Quantum Hardware",
+      "url": "https://www.semiconductor-digest.com/xanadu-asml-to-advance-lithography-for-photonic-quantum-hardware/?utm_source=rss&utm_medium=rss&utm_campaign=xanadu-asml-to-advance-lithography-for-photonic-quantum-hardware",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/",
+      "published": "2026-09-11T19:02:26+00:00",
+      "summary": "Through this collaboration, Canadian photonic quantum computing company Xanadu and ASML will explore lithography-enabled process approaches for improved patterning control and\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "Synopsys and A*STAR IME Join Forces to Accelerate Innovation for Advanced Semiconductor Packaging",
+      "url": "https://www.semiconductor-digest.com/synopsys-and-astar-ime-join-forces-to-accelerate-innovation-for-advanced-semiconductor-packaging/?utm_source=rss&utm_medium=rss&utm_campaign=synopsys-and-astar-ime-join-forces-to-accelerate-innovation-for-advanced-semiconductor-packaging",
+      "source": "Semiconductor Digest",
+      "source_url": "https://www.semiconductor-digest.com/",
+      "published": "2026-09-11T18:58:55+00:00",
+      "summary": "Synopsys and A*STAR IME collaborate on advanced packaging, chiplet architectures, and simulation technologies. The post Synopsys and A*STAR IME Join Forces to Accelerate\u2026",
+      "category": "manufacturing",
+      "tier": 1
+    },
+    {
+      "title": "8K AI Vision SoC Handles Multi-Sensor Perception",
+      "url": "https://www.electronicdesign.com/technologies/industrial/product/55404431/electronic-design-8k-ai-vision-soc-handles-multi-sensor-perception",
+      "source": "Electronic Design",
+      "source_url": "https://www.electronicdesign.com/",
+      "published": "2026-09-11T18:30:00+00:00",
+      "summary": "Ambarella's CV7 targets multi-camera applications like 360-degree cameras.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "ASUS Pro WS W890E-SAGE SE Motherboard Review",
+      "url": "https://www.servethehome.com/asus-pro-ws-w890e-sage-se-motherboard-review/",
+      "source": "ServeTheHome",
+      "source_url": "https://www.servethehome.com/",
+      "published": "2026-09-11T17:00:36+00:00",
+      "summary": "Today we are taking a look at ASUS's premium motherboard for the new Xeon 600 workstation platform, the Pro WS W890E-SAGE SE. A showcase for the platform, the SAGE SE supports\u2026",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Disembodied fruit fly brain joins the crypto speculation swarm",
+      "url": "https://www.theregister.com/offbeat/2026/09/11/disembodied-fruit-fly-brain-joins-the-crypto-speculation-swarm/5295914",
+      "source": "The Register",
+      "source_url": "https://www.theregister.com/",
+      "published": "2026-09-11T16:03:00+00:00",
+      "summary": "Coinbase engineer gives simulated insect $100 and lets its neurons make the trades",
+      "category": "industry",
+      "tier": 2
+    },
+    {
+      "title": "SoC PLANNER: A New Generation of Automated SoC Design Exploration Managing Cost-Effectiveness and Sustainability",
+      "url": "https://www.eetimes.com/soc-planner-a-new-generation-of-automated-soc-design-exploration-managing-cost-effectiveness-and-sustainability/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-11T14:36:58+00:00",
+      "summary": "GRENOBLE, France \u2013 [2026, September 8th] CEA, Defacto Technologies, and Innova Advanced Technologies today announced the completion of SoC PLANNER, a three-years project funded by\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Should Standards Trump Innovation?",
+      "url": "https://www.eetimes.com/should-standards-trump-innovation/",
+      "source": "EE Times",
+      "source_url": "https://www.eetimes.com/",
+      "published": "2026-09-11T13:52:31+00:00",
+      "summary": "Standards shouldn\u2019t muzzle RFID\u2019s next leap: Gen2X keeps Gen2 compatibility while boosting range, speed, and reliability. The post Should Standards Trump Innovation? appeared\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Semiconductor and AI Revolution - PIB",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFA2RzJwZ2V0b0lyVFc2UnNHUmdjLTJEVmFTNllJVGQwNHM2X3pHMUhjME8zX1FzZU5UV0hrY1lSVndib2YzVkxpVU54RjhKN25NaTdyNjBaYS1IbDU5cmFIZk1PZm9XejNTVjFtbWpDemZqUXp1MFl3?oc=5",
+      "source": "Google News \u2014 India Semi",
+      "source_url": "https://news.google.com/",
+      "published": "2026-09-11T11:30:38+00:00",
+      "summary": "Semiconductor and AI Revolution PIB",
+      "category": "india",
+      "tier": 2
+    },
+    {
+      "title": "Broadcom Rides Rocketing Trend For Custom AI Accelerators",
+      "url": "https://www.nextplatform.com/connect/2026/09/10/broadcom-rides-rocketing-trend-for-custom-ai-accelerators/5295681",
+      "source": "The Next Platform",
+      "source_url": "https://www.nextplatform.com/",
+      "published": "2026-09-10T19:44:47+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Startup d-Matrix Will Pair Its Raptor Memory-Based XPU To Nvidia Rackscale Iron",
+      "url": "https://www.nextplatform.com/compute/2026/09/10/startup-d-matrix-will-pair-its-raptor-memory-based-xpu-to-nvidia-rackscale-iron/5295601",
+      "source": "The Next Platform",
+      "source_url": "https://www.nextplatform.com/",
+      "published": "2026-09-10T14:52:10+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "For Automakers, RISC-V Isn\u2019t Just About Ownership: It\u2019s About Freedom of Choice",
+      "url": "https://riscv.org/blog/automotive-mips/",
+      "source": "RISC-V International",
+      "source_url": "https://riscv.org/",
+      "published": "2026-09-10T13:37:52+00:00",
+      "summary": "MIPS\u2019 Sameer Wasson explains why an automotive OEM\u2019s choice of instruction set architecture (ISA) should prioritize supplier choice, software reuse and long-term economic control.\u2026",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "Qualcomm Talks Next-Gen Oryon CPU, Adreno GPU, and Hexagon NPU",
+      "url": "https://www.servethehome.com/qualcomm-details-next-gen-oryon-cpu-adreno-gpu-and-hexagon-npu/",
+      "source": "ServeTheHome",
+      "source_url": "https://www.servethehome.com/",
+      "published": "2026-09-10T13:05:36+00:00",
+      "summary": "Qualcomm disclosed more on its next-gen Oryon CPU, Adreno GPU, and Hexagon NPU that will power next-gen devices The post Qualcomm Talks Next-Gen Oryon CPU, Adreno GPU, and Hexagon\u2026",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "Chinese quartz approved for semiconductor equipment and DRAM manufacturing, but it still can't break America's monopoly \u2014 China secures domestic supply for chipmaking components, but Spruce Pine still holds the crucible monopoly",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/chinese-quartz-approved-for-semiconductor-equipment-and-dram-manufacturing-but-it-still-cant-break-americas-monopoly-china-secures-domestic-supply-for-chipmaking-components-but-spruce-pine-still-holds-the-crucible-monopoly",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/",
+      "published": "2026-09-10T12:20:00+00:00",
+      "summary": "Pacific Quartz gets its high-purity quartz qualified for semiconductor equipment and DRAM manufacturing.",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "The state of ABF substrates in data center silicon in 2026 \u2014 solving the supply crunch and material wall beneath every AI accelerator",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/the-state-of-abf-substrates-in-data-center-silicon-in-2026-solving-the-supply-crunch-and-material-wall-beneath-every-ai-accelerator",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/",
+      "published": "2026-09-10T12:00:00+00:00",
+      "summary": "ABF substrates underpin today\u2019s most advanced AI chips, but soaring demand and expanding accelerator packages are creating new supply and technical bottlenecks that the industry\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "TSMC, Samsung, and Intel shore up support with ASML to deploy larger High-NA EUV photomasks \u2014 6\u00d712-inch photomask transition may take years despite unified effort",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-samsung-and-intel-shore-up-support-with-asml-to-deploy-larger-high-na-euv-photomasks-6-12-inch-photomask-transition-may-take-years-despite-unified-effort",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/",
+      "published": "2026-09-10T11:20:00+00:00",
+      "summary": "ASML, Intel, Samsung, and TSMC back development of 6\u00d712-inch to build large processors using High-NA EUV lithography systems without stitching.",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "On Binary Translation and its Consequences",
+      "url": "https://chipsandcheese.com/p/on-binary-translation-and-its-consequences",
+      "source": "Chips and Cheese",
+      "source_url": "https://chipsandcheese.com/",
+      "published": "2026-09-10T09:46:18+00:00",
+      "summary": "The PC market is one of the toughest areas for a CPU designer to compete in.",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "HPE Sees No Customer Pushback On Rising Datacenter Equipment Costs",
+      "url": "https://www.nextplatform.com/compute/2026/09/08/hpe-sees-no-customer-pushback-on-rising-datacenter-equipment-costs/5295102",
+      "source": "The Next Platform",
+      "source_url": "https://www.nextplatform.com/",
+      "published": "2026-09-08T19:28:02+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "TSMC to start using High-NA EUV lithography in 2030 \u2014 A10 or A11 technology prime candidates for use",
+      "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-to-start-using-high-na-euv-lithography-in-2030-a10-or-a11-technology-prime-candidates-for-use",
+      "source": "Tom's Hardware",
+      "source_url": "https://www.tomshardware.com/",
+      "published": "2026-09-08T15:00:00+00:00",
+      "summary": "TSMC discloses plans to use High-NA EUV lithography in 2030, 6\u00d712-inch photomasks with new scanners in 2033.",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Arm\u2019s C2-Ultra, G2-Ultra NX, and CSS N4 IP",
+      "url": "https://chipsandcheese.com/p/arms-c2-ultra-g2-ultra-nx-and-css",
+      "source": "Chips and Cheese",
+      "source_url": "https://chipsandcheese.com/",
+      "published": "2026-09-08T02:00:00+00:00",
+      "summary": "Editor\u2019s Note (9/8/2026): Arm has reached out to clarify that the maximum IPC increase of the C2-Ultra core over the C1-Ultra core using the parameters shown in the endnotes is 7%\u2026",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Dell Says AI Will Drive 75 Percent Of Datacenter Demand By 2030",
+      "url": "https://www.nextplatform.com/compute/2026/09/07/dell-says-ai-will-drive-75-percent-of-datacenter-demand-by-2030/5294882",
+      "source": "The Next Platform",
+      "source_url": "https://www.nextplatform.com/",
+      "published": "2026-09-07T22:32:10+00:00",
+      "summary": "",
+      "category": "ai-silicon",
+      "tier": 2
+    },
+    {
+      "title": "The E.U.\u2019s AI Drive Undermines Its \u200bOwn Chip Strategy",
+      "url": "https://spectrum.ieee.org/europes-ai-drive",
+      "source": "IEEE Spectrum",
+      "source_url": "https://spectrum.ieee.org/topic/semiconductors/",
+      "published": "2026-08-31T14:00:04+00:00",
+      "summary": "This story was originally published by Tech Policy Press . The European Union\u2019s push for technological sovereignty faces an uncomfortable contradiction. As the E.U. rolls out AI\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "Hot Chips 2026: Interviewing IBM's Christian Zoellin & Christian Jacobi",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-interviewing-ibms",
+      "source": "Chips and Cheese",
+      "source_url": "https://chipsandcheese.com/",
+      "published": "2026-08-30T17:31:05+00:00",
+      "summary": "Hello you fine Internet folks,",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Hot Chips 2026: XCENA and Samsung\u2019s Near-Memory Compute CXL Device",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-xcena-and-samsungs",
+      "source": "Chips and Cheese",
+      "source_url": "https://chipsandcheese.com/",
+      "published": "2026-08-30T07:25:37+00:00",
+      "summary": "CXL memory expansion, with a side of compute",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "Hot Chips 2026: Samsung\u2019s Processing-in-Memory (PIM)",
+      "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+      "source": "Chips and Cheese",
+      "source_url": "https://chipsandcheese.com/",
+      "published": "2026-08-29T05:36:33+00:00",
+      "summary": "In-memory compute with LPDDR5X",
+      "category": "architecture",
+      "tier": 2
+    },
+    {
+      "title": "World RISC-V Days: Turin Italy",
+      "url": "https://riscv.org/blog/world-risc-v-days-turin-italy/",
+      "source": "RISC-V International",
+      "source_url": "https://riscv.org/",
+      "published": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Turin Italy appeared first on RISC-V International .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "World RISC-V Days: Tel Aviv Israel",
+      "url": "https://riscv.org/blog/world-risc-v-days-tel-aviv-israel/",
+      "source": "RISC-V International",
+      "source_url": "https://riscv.org/",
+      "published": "2026-08-27T18:32:09+00:00",
+      "summary": "The post World RISC-V Days: Tel Aviv Israel appeared first on RISC-V International .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "World RISC-V Days: Gujarat India",
+      "url": "https://riscv.org/blog/world-risc-v-days-gujarat-india/",
+      "source": "RISC-V International",
+      "source_url": "https://riscv.org/",
+      "published": "2026-08-27T18:32:08+00:00",
+      "summary": "The post World RISC-V Days: Gujarat India appeared first on RISC-V International .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "World RISC-V Days: Boston USA",
+      "url": "https://riscv.org/blog/world-risc-v-days-boston-usa/",
+      "source": "RISC-V International",
+      "source_url": "https://riscv.org/",
+      "published": "2026-08-27T18:32:07+00:00",
+      "summary": "The post World RISC-V Days: Boston USA appeared first on RISC-V International .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "The U.S. Is Building CHIPS Act Fabs but Neglecting R&D",
+      "url": "https://spectrum.ieee.org/chips-act-impact-semiconductor-manufacturing",
+      "source": "IEEE Spectrum",
+      "source_url": "https://spectrum.ieee.org/topic/semiconductors/",
+      "published": "2026-08-27T15:00:03+00:00",
+      "summary": "On 6 August, the U.S. Government Accountability Office (GAO) released a report on the state of the 2022 CHIPS and Science Act , a bipartisan federal law passed under the Biden\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "China\u2019s Grip on Erbium and Yttrium Could Choke Data-Center Growth",
+      "url": "https://spectrum.ieee.org/rare-earth-shortage",
+      "source": "IEEE Spectrum",
+      "source_url": "https://spectrum.ieee.org/topic/semiconductors/",
+      "published": "2026-08-26T13:00:01+00:00",
+      "summary": "There are 17 rare earth elements. While almost all of them have vital industrial uses, you could be forgiven for believing, based on news coverage, that there are only four that\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "OpenTitan project kicks off the Peppermint integrated root-of-trust for area-constrained SoCs",
+      "url": "https://lowrisc.org/news/opentitan-project-kicks-off-the-peppermint-integrated-root-of-trust-for-area-constrained-socs/",
+      "source": "lowRISC",
+      "source_url": "https://www.lowrisc.org/",
+      "published": "2026-08-25T08:00:00+00:00",
+      "summary": "The post OpenTitan project kicks off the Peppermint integrated root-of-trust for area-constrained SoCs appeared first on lowRISC .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "Building Technology People Can Trust",
+      "url": "https://spectrum.ieee.org/ai-connected-test-and-measurement-platforms",
+      "source": "IEEE Spectrum",
+      "source_url": "https://spectrum.ieee.org/topic/semiconductors/",
+      "published": "2026-08-24T11:37:02+00:00",
+      "summary": "This article is brought to you by Emerson . I\u2019ve spent much of my career as an engineer, including years in the semiconductor industry. And one lesson has stayed with me through\u2026",
+      "category": "industry",
+      "tier": 1
+    },
+    {
+      "title": "The Cost of Time and AI Timelines",
+      "url": "https://www.fabricatedknowledge.com/p/the-cost-of-time-and-ai-timelines",
+      "source": "Fabricated Knowledge",
+      "source_url": "https://www.fabricatedknowledge.com/",
+      "published": "2026-08-13T15:49:24+00:00",
+      "summary": "Financing anything is just pulling forward the future.",
+      "category": "manufacturing",
+      "tier": 2
+    },
+    {
+      "title": "I3C comes to OpenTitan Earl Grey 2",
+      "url": "https://lowrisc.org/news/i3c-comes-to-opentitan-earl-grey-2/",
+      "source": "lowRISC",
+      "source_url": "https://www.lowrisc.org/",
+      "published": "2026-07-30T08:00:00+00:00",
+      "summary": "The post I3C comes to OpenTitan Earl Grey 2 appeared first on lowRISC .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "Close but Not Quite",
+      "url": "https://www.fabricatedknowledge.com/p/close-but-not-quite",
+      "source": "Fabricated Knowledge",
+      "source_url": "https://www.fabricatedknowledge.com/",
+      "published": "2026-07-27T20:48:06+00:00",
+      "summary": "It's not the end of this washout.",
+      "category": "manufacturing",
+      "tier": 2
+    },
+    {
+      "title": "OpenTitan Earl Grey 2 to support CHERI and PQC",
+      "url": "https://lowrisc.org/news/opentitan-earl-grey-2-to-support-cheri-and-pqc/",
+      "source": "lowRISC",
+      "source_url": "https://www.lowrisc.org/",
+      "published": "2026-07-14T08:00:00+00:00",
+      "summary": "The post OpenTitan Earl Grey 2 to support CHERI and PQC appeared first on lowRISC .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "Tampere University Joins OpenTitan Coalition to Advance RISC-V SoC Security and Open-Source Silicon Research",
+      "url": "https://lowrisc.org/news/tampere-university-joins-opentitan-coalition-to-advance-risc-v-soc-security-and-open-source-silicon-research/",
+      "source": "lowRISC",
+      "source_url": "https://www.lowrisc.org/",
+      "published": "2026-07-10T08:00:00+00:00",
+      "summary": "The post Tampere University Joins OpenTitan Coalition to Advance RISC-V SoC Security and Open-Source Silicon Research appeared first on lowRISC .",
+      "category": "riscv",
+      "tier": 2
+    },
+    {
+      "title": "IN-DEPTH: What Unitree's Evolution Means For Robotics",
+      "url": "https://www.fabricatedknowledge.com/p/in-depth-what-unitrees-evolution",
+      "source": "Fabricated Knowledge",
+      "source_url": "https://www.fabricatedknowledge.com/",
+      "published": "2026-06-24T20:28:30+00:00",
+      "summary": "Unitree Playbook, China's Scaling Law, Geopolitics, and Humanoids in the wild",
+      "category": "manufacturing",
+      "tier": 2
+    },
+    {
+      "title": "Press Release - June 9, 2026",
+      "url": "https://dvcon.org/news/press-release-june-9-2026",
+      "source": "DVCon",
+      "source_url": "https://dvcon.org/",
+      "published": "2026-06-09T00:00:00+00:00",
+      "summary": "Design and verification conference news, press releases, and industry coverage.",
+      "category": "conferences",
+      "tier": 2
+    },
+    {
+      "title": "Press Release - March 19, 2026",
+      "url": "https://dvcon.org/press-release/press-release-march-19-2026",
+      "source": "DVCon",
+      "source_url": "https://dvcon.org/",
+      "published": "2026-03-19T00:00:00+00:00",
+      "summary": "Design and verification conference news, press releases, and industry coverage.",
+      "category": "conferences",
+      "tier": 2
+    },
+    {
+      "title": "DVCon \u2014 Press Coverage - SemiWiki (February 6, 2026)",
+      "url": "https://semiwiki.com/podcast/podcast-ep330-an-overview-of-dvcon-u-s-2026-with-xiaolin-chen/",
+      "source": "DVCon",
+      "source_url": "https://dvcon.org/",
+      "published": "2026-02-06T00:00:00+00:00",
+      "summary": "Design and verification conference news, press releases, and industry coverage.",
+      "category": "conferences",
+      "tier": 2
+    },
+    {
+      "title": "Press Release - January 27, 2026",
+      "url": "https://dvcon.org/press-release-january-27-2026",
+      "source": "DVCon",
+      "source_url": "https://dvcon.org/",
+      "published": "2026-01-27T00:00:00+00:00",
+      "summary": "Design and verification conference news, press releases, and industry coverage.",
+      "category": "conferences",
+      "tier": 2
+    }
+  ]
+};
