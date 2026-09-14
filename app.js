@@ -120,8 +120,24 @@ async function initNewsPage(){
  });
  render();
 }
+function initChrome(){
+ const header=document.querySelector("header");
+ const toggle=document.querySelector(".nav-toggle");
+ const page=location.pathname.split("/").pop()||"index.html";
+ document.querySelectorAll("nav a").forEach(a=>{
+  const href=a.getAttribute("href");
+  if(href===page||(page==="index.html"&&href==="index.html"))a.classList.add("is-active");
+ });
+ if(toggle&&header){
+  toggle.addEventListener("click",()=>{
+   const open=header.classList.toggle("nav-open");
+   toggle.setAttribute("aria-label",open?"Close menu":"Open menu");
+  });
+ }
+}
 if(document.querySelector("#projectGrid"))initProjects();
 initTrending();
 initStackCounts();
 initIndustryNews();
 initNewsPage();
+initChrome();

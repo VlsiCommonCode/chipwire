@@ -6,7 +6,7 @@
   <title>chipwire.ai — Open Silicon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <meta property="og:site_name" content="chipwire.ai">
   <meta property="og:title" content="chipwire.ai — Open Silicon">
@@ -14,9 +14,13 @@
 </head>
 <body class="page-home">
 
-  <header>
+  <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="index.html">chipwire.ai</a>
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="3.5" y="3.5" width="21" height="21" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M10 3.5v21M18 3.5v21M3.5 10h21M3.5 18h21" stroke="currentColor" stroke-width="1" opacity=".65"/></svg>
+        <span class="brand-word">chipwire<span>.ai</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
       <nav>
         <a href="projects.html">Projects</a>
         <a href="news.html">News</a>
@@ -28,31 +32,47 @@
   </header>
 
   <main>
-
     <section class="hero-stage">
       <div class="hero-atmosphere" aria-hidden="true"></div>
-      <div class="wrap hero-stage-inner">
-        <p class="hero-brand reveal">chipwire.ai</p>
-        <h1 class="reveal delay-1">The map from ISA to silicon.</h1>
-        <p class="hero-lead reveal delay-2">
-          A curated path through open RISC-V — cores, interconnect, verification, FPGA and open ASIC —
-          so engineers find the right project for the problem they are solving.
-        </p>
-        <div class="hero-links reveal delay-3">
-          <a class="cta" href="projects.html">Explore the map</a>
-          <a class="cta-secondary" href="news.html">Industry news</a>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <p class="kicker reveal">Semiconductor intelligence</p>
+          <h1 class="reveal delay-1">The map from ISA to silicon.</h1>
+          <p class="hero-lead reveal delay-2">
+            A curated path through open RISC-V — cores, interconnect, verification, FPGA and open ASIC —
+            so engineers find the right project for the problem they are solving.
+          </p>
+          <div class="hero-links reveal delay-3">
+            <a class="cta" href="projects.html">Explore the map</a>
+            <a class="cta-secondary" href="news.html">Industry news</a>
+          </div>
+          <div class="hero-path reveal delay-4" aria-hidden="true">
+            <span>ISA</span><i></i>
+            <span>CPU</span><i></i>
+            <span>SoC</span><i></i>
+            <span>Verify</span><i></i>
+            <span>FPGA</span><i></i>
+            <span>ASIC</span><i></i>
+            <span>Silicon</span>
+          </div>
         </div>
-        <div class="hero-path reveal delay-4" aria-hidden="true">
-          <span>ISA</span><i></i>
-          <span>CPU</span><i></i>
-          <span>SoC</span><i></i>
-          <span>Verify</span><i></i>
-          <span>FPGA</span><i></i>
-          <span>ASIC</span><i></i>
-          <span>Silicon</span>
+        <div class="die-panel reveal delay-2">
+          <figure class="die-frame">
+            <img class="die-shot" src="die-shot.png" width="1024" height="768" alt="Photomicrograph-style die shot of a fictional RISC-V SoC, with logic on the left and on-die cache macros on the right">
+          </figure>
+          <p class="die-caption">Die shot · RISC-V SoC</p>
         </div>
       </div>
     </section>
+
+    <div class="stats">
+      <div class="wrap stats-row">
+        <div class="stat"><b>8</b><span>Engineering layers</span></div>
+        <div class="stat"><b>RISC-V</b><span>ISA through tapeout</span></div>
+        <div class="stat"><b>Open IP</b><span>Cores, buses, SoCs</span></div>
+        <div class="stat"><b>Live feeds</b><span>Industry + GitHub</span></div>
+      </div>
+    </div>
 
     <section class="section section-stack">
       <div class="wrap">
@@ -150,13 +170,12 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer>
     <div class="wrap footer-inner">
       <span>© 2026 chipwire.ai</span>
-      <span>Open-source engineering map.</span>
+      <span>Open-source engineering map for silicon teams.</span>
     </div>
   </footer>
 
